@@ -9,7 +9,7 @@ export default SwitchNavigator = createAppContainer(
       MainApp: mainStackNavigator,
     },
     {
-      initialRouteName: 'MainApp',
+      initialRouteName: 'SplashScreen',
     },
   ),
 );

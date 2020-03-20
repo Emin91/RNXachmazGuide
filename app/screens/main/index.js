@@ -14,7 +14,7 @@ const MainScreen = ({navigation}) => {
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.MAIN_CINDER} />
       <View style={styles.headerComponent}>
-        <HeaderComponent navigation={navigation} />
+        <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
       </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
         <ImageCardComponent />
