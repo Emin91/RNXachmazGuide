@@ -4,7 +4,7 @@ import {titles} from '../../constants/strings';
 import styles from './style';
 import icons from '../../constants/icons';
 
-const HeaderComponent = () => {
+const HeaderComponent = ({navigation}) => {
   return (
     <View style={styles.mainView}>
       <View style={styles.headerView}>
@@ -19,7 +19,10 @@ const HeaderComponent = () => {
           <Text style={styles.headerTitle}>{titles.MAIN_TITLE}</Text>
         </View>
       </View>
-      <TouchableOpacity activeOpacity={0.6} style={styles.iconMenuView}>
+      <TouchableOpacity
+        activeOpacity={0.6}
+        onPress={() => navigation.toggleDrawer()}
+        style={styles.iconMenuView}>
         <Image
           style={styles.burgerIcon}
           resizeMode="contain"

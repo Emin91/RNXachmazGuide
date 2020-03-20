@@ -1,12 +1,13 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import MainScreen from '../../screens/main';
 import {colors} from '../../constants/colors';
+import DrawerMenu from '../drawer';
+import HistoryScreen from '../../screens/history';
 
 const AppContainer = createStackNavigator(
   {
     MainScreen: {
-      screen: MainScreen,
+      screen: DrawerMenu,
       navigationOptions: ({}) => ({
         title: null,
         headerTransparent: true,
@@ -19,7 +20,6 @@ const AppContainer = createStackNavigator(
     },
   },
   {
-    //headerMode: 'none',
     initialRouteName: 'MainScreen',
   },
 );

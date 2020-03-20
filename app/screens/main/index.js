@@ -9,12 +9,12 @@ import TextCardComponent from '../../components/textCard';
 import HeaderComponent from '../../components/header';
 import styles from './style';
 
-const MainScreen = () => {
+const MainScreen = ({navigation}) => {
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.MAIN_CINDER} />
       <View style={styles.headerComponent}>
-        <HeaderComponent />
+        <HeaderComponent navigation={navigation} />
       </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
         <ImageCardComponent />
