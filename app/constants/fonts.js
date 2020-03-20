@@ -1,0 +1,18 @@
+export const myFonts = {
+  AVEN_BVOLD_B: 'AvenirNextCyr-Bold',
+  AVEN_BVOLD_BI: 'AvenirNextCyr-BoldItalic',
+  AVEN_BVOLD_D: 'AvenirNextCyr-Demi',
+  AVEN_BVOLD_DI: 'AvenirNextCyr-DemiItalic',
+  AVEN_BVOLD_H: 'AvenirNextCyr-Heavy',
+  AVEN_BVOLD_HI: 'AvenirNextCyr-HeavyItalic',
+  AVEN_BVOLD_I: 'AvenirNextCyr-Italic',
+  AVEN_BVOLD_L: 'AvenirNextCyr-Light',
+  AVEN_BVOLD_LI: 'AvenirNextCyr-LightItalic',
+  AVEN_BVOLD_M: 'AvenirNextCyr-Medium',
+  AVEN_BVOLD_MI: 'AvenirNextCyr-MediumItalic',
+  AVEN_BVOLD_R: 'AvenirNextCyr-Regular',
+  AVEN_BVOLD_T: 'AvenirNextCyr-Thin',
+  AVEN_BVOLD_TI: 'AvenirNextCyr-ThinItalic',
+  AVEN_BVOLD_U: 'AvenirNextCyr-Ultra',
+  AVEN_BVOLD_UI: 'AvenirNextCyr-UltraItalic',
+};
