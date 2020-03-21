@@ -1,19 +1,14 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import {titles} from '../../constants/strings';
 import styles from './style';
 import icons from '../../constants/icons';
 
-const HeaderComponent = ({navigation, title}) => {
+const HeaderComponent = ({navigation, title, iconName = icons.SMALL_LOGO}) => {
   return (
     <View style={styles.mainView}>
       <View style={styles.headerView}>
         <View style={styles.iconView}>
-          <Image
-            style={styles.logo}
-            resizeMode="contain"
-            source={icons.SMALL_LOGO}
-          />
+          <Image style={styles.logo} resizeMode="contain" source={iconName} />
         </View>
         <View style={styles.titleView}>
           <Text style={styles.headerTitle}>{title}</Text>

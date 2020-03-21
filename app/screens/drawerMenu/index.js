@@ -1,56 +1,10 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import styles from './style';
+import {menuItemsListOne, menuItemsListTwo} from './components/menuItemsList';
 import {images} from '../../constants/images';
 import {titles} from '../../constants/strings';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {colors} from '../../constants/colors';
-
-const menuItems = [
-  {
-    title: titles.MENU_MAIN,
-    nav: 'Main',
-  },
-  {
-    title: titles.MENU_HISTORY,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_EDUCATION,
-    nav: 'Education',
-  },
-  {
-    title: titles.MENU_SPORT,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_CULTURE,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_ECONOMY,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_PHOTOS,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_GEO,
-    nav: 'History',
-  },
-];
-
-const menuItemsTwo = [
-  {
-    title: titles.MENU_ABOUT_APP,
-    nav: 'History',
-  },
-  {
-    title: titles.MENU_EXIT,
-    nav: 'History',
-  },
-];
+import styles from './style';
+import MenuItems from './components/mainItems';
 
 const DrawerMenuItems = ({navigation}) => {
   return (
@@ -62,37 +16,10 @@ const DrawerMenuItems = ({navigation}) => {
         <Text style={styles.menuTitle}>{titles.MENU_TITLE}</Text>
       </View>
       <View style={styles.contentView}>
-        {menuItems.map(({title, nav}) => {
-          return (
-            <TouchableOpacity
-              style={{
-                borderLeftWidth: 5,
-                borderLeftColor:
-                  title == titles.MENU_MAIN
-                    ? colors.ORANGE
-                    : colors.MAIN_CINDER,
-              }}
-              onPress={() => navigation.navigate(nav)}
-              activeOpacity={0.6}
-              key={title}>
-              <Text style={styles.menuItems}>{title}</Text>
-            </TouchableOpacity>
-          );
-        })}
+        <MenuItems navigation={navigation} arrays={menuItemsListOne} />
       </View>
-      <View
-        style={{
-          flex: 0.17,
-          paddingBottom: 7,
-          justifyContent: 'flex-end',
-        }}>
-        {menuItemsTwo.map(({title, nav}) => {
-          return (
-            <TouchableOpacity activeOpacity={0.7} key={title}>
-              <Text style={styles.menuItems}>{title}</Text>
-            </TouchableOpacity>
-          );
-        })}
+      <View style={styles.downView}>
+        <MenuItems navigation={navigation} arrays={menuItemsListTwo} />
       </View>
     </View>
   );

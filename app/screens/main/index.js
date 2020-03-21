@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, ScrollView, StatusBar} from 'react-native';
 import {cards} from './components/cardsArray';
 import {colors} from '../../constants/colors';
@@ -10,6 +10,12 @@ import HeaderComponent from '../../components/header';
 import styles from './style';
 
 const MainScreen = ({navigation}) => {
+  const openDraw = () => {};
+
+  useEffect(() => {
+    navigation.openDrawer();
+  }, []);
+
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.MAIN_CINDER} />

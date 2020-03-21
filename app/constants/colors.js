@@ -1,5 +1,5 @@
 export const colors = {
-  MAIN_CINDER: '#171822',
+  MAIN_CINDER: '#2D2F3D',
   SUB_CLAY: '#212330',
   ORANGE: '#FFAC30',
   WHITE: '#FFFFFF',

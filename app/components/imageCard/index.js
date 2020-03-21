@@ -13,6 +13,7 @@ const ImageCardComponent = () => {
       <View style={styles.scrollView}>
         <ScrollView
           horizontal
+          overScrollMode="never"
           showsHorizontalScrollIndicator={false}
           style={styles.scrollContentView}>
           <Image style={styles.img} source={images.IMG_1} />

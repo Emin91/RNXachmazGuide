@@ -27,12 +27,26 @@ const styles = StyleSheet.create({
   contentView: {
     flex: 0.5,
   },
-  menuItems: {
+  touchableItems: {
+    height: 30,
+    justifyContent: 'center',
+  },
+  menuItemsText: {
     fontSize: 20,
     fontFamily: myFonts.AVEN_BVOLD_B,
     color: colors.WHITE,
-    paddingTop: 5,
     paddingLeft: 20,
+  },
+  menuItemsTextSelected: {
+    fontSize: 20,
+    fontFamily: myFonts.AVEN_BVOLD_B,
+    color: colors.ORANGE,
+    paddingLeft: 20,
+  },
+  downView: {
+    flex: 0.17,
+    paddingBottom: 7,
+    justifyContent: 'flex-end',
   },
 });
 
