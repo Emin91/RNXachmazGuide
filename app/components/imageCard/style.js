@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
     fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
-  scrollView: {
+  imageSliderView: {
     flex: 1,
-    marginHorizontal: 10,
+    // backgroundColor: 'red',
+    // marginHorizontal: 10,
   },
   scrollContentView: {
     flex: 0.85,
