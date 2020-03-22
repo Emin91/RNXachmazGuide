@@ -10,7 +10,7 @@ const MenuItems = ({navigation, arrays}) => {
           <TouchableOpacity
             style={styles.touchableItems}
             onPress={() =>
-              index == 9 ? BackHandler.exitApp() : navigation.navigate(nav)
+              index == 10 ? BackHandler.exitApp() : navigation.navigate(nav)
             }
             activeOpacity={0.6}
             key={title}>

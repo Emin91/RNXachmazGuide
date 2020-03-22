@@ -8,7 +8,14 @@ const HeaderComponent = ({navigation, title, iconName = icons.MENU_CITY}) => {
     <View style={styles.mainView}>
       <View style={styles.headerView}>
         <View style={styles.iconView}>
-          <Image style={styles.logo} resizeMode="contain" source={iconName} />
+          <Image
+            style={[
+              styles.logo,
+              {width: iconName == icons.MENU_CITY ? '50%' : '90%'},
+            ]}
+            resizeMode="contain"
+            source={iconName}
+          />
         </View>
         <View style={styles.titleView}>
           <Text style={styles.headerTitle}>{title}</Text>

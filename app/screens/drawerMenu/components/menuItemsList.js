@@ -41,17 +41,22 @@ export const menuItemsListOne = [
     nav: '',
     index: 7,
   },
+  {
+    title: titles.MENU_EXECUTIVE,
+    nav: '',
+    index: 8,
+  },
 ];
 
 export const menuItemsListTwo = [
   {
     title: titles.MENU_ABOUT_APP,
     nav: '',
-    index: 8,
+    index: 9,
   },
   {
     title: titles.MENU_EXIT,
     nav: null,
-    index: 9,
+    index: 10,
   },
 ];

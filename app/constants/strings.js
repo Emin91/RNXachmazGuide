@@ -12,6 +12,7 @@ export const titles = {
   MENU_ECONOMY: 'İqtisadiyyat',
   MENU_PHOTOS: 'Foto qalereya',
   MENU_GEO: 'Coğrafi mövqeyi',
+  MENU_EXECUTIVE: 'İcra Hakimiyyəti',
   MENU_ABOUT_APP: 'App haqqında',
   MENU_EXIT: 'Çıxış',
   //Cards titles
