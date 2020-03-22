@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 25,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
   chartView: {

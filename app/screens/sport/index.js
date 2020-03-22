@@ -7,22 +7,22 @@ import {titles} from '../../constants/strings';
 import {bigText} from '../../constants/moreText';
 import icons from '../../constants/icons';
 
-const HistoryScreen = ({navigation}) => {
+const SportScreen = ({navigation}) => {
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent
-          iconName={icons.MENU_HISTORY}
-          title={titles.MENU_HISTORY}
+          iconName={icons.MENU_SPORT}
+          title={titles.MENU_SPORT}
           navigation={navigation}
         />
       </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <Text style={styles.bigText}>{bigText.HISTORY_TEXT}</Text>
+        <Text style={styles.bigText}>{bigText.SPORT_TEXT}</Text>
       </ScrollView>
     </View>
   );
 };
 
-export default HistoryScreen;
+export default SportScreen;

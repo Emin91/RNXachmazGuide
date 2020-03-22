@@ -12,7 +12,7 @@ import {schoolList} from './components/schoolListArray';
 const EducationScreen = ({navigation}) => {
   return (
     <View style={styles.mainView}>
-      <StatusBar backgroundColor={colors.MAIN_CINDER} />
+      <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent
           iconName={icons.MENU_EDU}
@@ -20,36 +20,40 @@ const EducationScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <View style={styles.descriptionView}>
-        <Text style={styles.descriptionText}>{bigText.EDUCATION_TITLE}</Text>
-        <Text style={styles.descriptionListTitle}>{titles.CARD_ITEM_NAME}</Text>
+      <View style={{flex: 0.88}}>
+        <View style={styles.descriptionView}>
+          <Text style={styles.descriptionText}>{bigText.EDUCATION_TITLE}</Text>
+          <Text style={styles.descriptionListTitle}>
+            {titles.CARD_ITEM_NAME}
+          </Text>
+        </View>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          {schoolList.map(
+            ({
+              num,
+              schoolName,
+              director,
+              location,
+              created,
+              studentCount,
+              teacherCount,
+              description,
+            }) => {
+              return (
+                <SchoolCards
+                  key={num}
+                  schoolName={schoolName}
+                  director={director}
+                  location={location}
+                  created={created}
+                  studentCount={studentCount}
+                  teacherCount={teacherCount}
+                  description={description}></SchoolCards>
+              );
+            },
+          )}
+        </ScrollView>
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        {schoolList.map(
-          ({
-            num,
-            schoolName,
-            director,
-            location,
-            created,
-            studentCount,
-            teacherCount,
-            description,
-          }) => {
-            return (
-              <SchoolCards
-                key={num}
-                schoolName={schoolName}
-                director={director}
-                location={location}
-                created={created}
-                studentCount={studentCount}
-                teacherCount={teacherCount}
-                description={description}></SchoolCards>
-            );
-          },
-        )}
-      </ScrollView>
     </View>
   );
 };

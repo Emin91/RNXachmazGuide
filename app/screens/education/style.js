@@ -8,35 +8,34 @@ const styles = StyleSheet.create({
     backgroundColor: colors.MAIN_CINDER,
   },
   headerComponent: {
-    flex: 0.15,
+    flex: 0.13,
   },
   descriptionView: {
-    flex: 0.4,
+    flex: 0.45,
   },
   scrollView: {
-    flex: 0.45,
-    marginTop: 5,
-    marginBottom: 10,
+    flex: 0.55,
   },
   descriptionText: {
     fontSize: 15,
+    paddingTop: 5,
     paddingLeft: 12,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.MONTSERRAT,
     color: colors.WHITE,
   },
   descriptionListTitle: {
-    fontSize: 15,
-    paddingTop: 15,
+    fontSize: 20,
+    paddingTop: 5,
     alignSelf: 'center',
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.ORANGE,
   },
   //Card
   cardView: {
     flex: 1,
-    marginTop: 20,
+    marginTop: 15,
     borderRadius: 10,
-    marginHorizontal: 5,
+    marginHorizontal: 8,
     backgroundColor: colors.ORANGE,
   },
   headerView: {
@@ -45,8 +44,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 15,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontSize: 13,
+    paddingVertical: 10,
+    alignSelf: 'center',
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.SUB_CLAY,
   },
   contentView: {
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     paddingLeft: 10,
     paddingVertical: 5,
-    fontFamily: myFonts.AVEN_BVOLD_DI,
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.SUB_CLAY,
   },
   tableDescription: {
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
   tableDescriptionTitle: {
     fontSize: 10,
     paddingVertical: 5,
-    fontFamily: myFonts.AVEN_BVOLD_D,
+    fontFamily: myFonts.LATINO,
     color: colors.SUB_CLAY,
   },
 });

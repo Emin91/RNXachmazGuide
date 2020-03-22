@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   menuTitle: {
     fontSize: 20,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.MONTSERRAT,
     color: colors.ORANGE,
   },
   contentView: {
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
   },
   menuItemsText: {
     fontSize: 20,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.WHITE,
     paddingLeft: 20,
   },
   menuItemsTextSelected: {
-    fontSize: 20,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontSize: 22,
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.ORANGE,
     paddingLeft: 20,
   },

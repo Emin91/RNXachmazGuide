@@ -10,15 +10,9 @@ import HeaderComponent from '../../components/header';
 import styles from './style';
 
 const MainScreen = ({navigation}) => {
-  const openDraw = () => {};
-
-  useEffect(() => {
-    navigation.openDrawer();
-  }, []);
-
   return (
     <View style={styles.mainView}>
-      <StatusBar backgroundColor={colors.MAIN_CINDER} />
+      <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
       </View>

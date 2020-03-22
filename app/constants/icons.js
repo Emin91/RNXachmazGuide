@@ -4,6 +4,7 @@ export default icons = {
   BURGER_MENU: require('../assets/icons/burger.png'),
   //Menu icons
   MENU_MAIN: require('../assets/icons/menu.png'),
+  MENU_CITY: require('../assets/icons/city.png'),
   MENU_HISTORY: require('../assets/icons/history.png'),
   MENU_EDU: require('../assets/icons/edu.png'),
   MENU_SPORT: require('../assets/icons/sport.png'),

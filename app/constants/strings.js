@@ -23,11 +23,14 @@ export const titles = {
   POPULATION_PREFICS: 'yaşlı əhali',
   PEOPLE_COUNT: 'nəfər',
   //Education cards
-  CARD_ITEM_NAME: 'Məlumat',
+  CARD_ITEM_NAME: 'Məktəblər',
   CARD_ITEM_NAME_DIRECTOR: 'Director:',
   CARD_ITEM_NAME_LOCATION: 'Ünvan:',
   CARD_ITEM_NAME_CREATED: 'Yaranma tarixi:',
   CARD_ITEM_NAME_STUDENT_COUNT: 'Şagirdlərin sayı:',
   CARD_ITEM_NAME_TEACHER_COUNT: 'Müəllimlərin sayı:',
   CARD_ITEM_NAME_INFO: 'Məlumat:',
+  //Culture
+  CULTURE_TITLE_ONE: 'Mədəniyyət, təhsil və səhiyyə müəssisələri',
+  CULTURE_TITLE_TWO: 'Hal-hazırda Xaçmaz rayonunda',
 };

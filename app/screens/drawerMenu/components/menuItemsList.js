@@ -18,27 +18,27 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_SPORT,
-    nav: 'History',
+    nav: 'Sport',
     index: 3,
   },
   {
     title: titles.MENU_CULTURE,
-    nav: 'History',
+    nav: 'Culture',
     index: 4,
   },
   {
     title: titles.MENU_ECONOMY,
-    nav: 'History',
+    nav: '',
     index: 5,
   },
   {
     title: titles.MENU_PHOTOS,
-    nav: 'History',
+    nav: '',
     index: 6,
   },
   {
     title: titles.MENU_GEO,
-    nav: 'History',
+    nav: '',
     index: 7,
   },
 ];
@@ -46,12 +46,12 @@ export const menuItemsListOne = [
 export const menuItemsListTwo = [
   {
     title: titles.MENU_ABOUT_APP,
-    nav: 'History',
-    index: 7,
+    nav: '',
+    index: 8,
   },
   {
     title: titles.MENU_EXIT,
-    nav: 'History',
-    index: 8,
+    nav: null,
+    index: 9,
   },
 ];

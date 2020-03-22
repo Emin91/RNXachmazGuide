@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, BackHandler} from 'react-native';
 import styles from '../style';
 
 const MenuItems = ({navigation, arrays}) => {
@@ -9,7 +9,9 @@ const MenuItems = ({navigation, arrays}) => {
         return (
           <TouchableOpacity
             style={styles.touchableItems}
-            onPress={() => navigation.navigate(nav)}
+            onPress={() =>
+              index == 9 ? BackHandler.exitApp() : navigation.navigate(nav)
+            }
             activeOpacity={0.6}
             key={title}>
             <Text

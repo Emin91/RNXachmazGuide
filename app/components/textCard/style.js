@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 25,
     paddingTop: 5,
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
   viewMore: {
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
   infoText: {
-    fontFamily: myFonts.AVEN_BVOLD_B,
+    fontFamily: myFonts.MONTSERRAT,
     fontSize: 15,
     color: colors.WHITE,
   },

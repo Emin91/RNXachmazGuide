@@ -5,6 +5,8 @@ import MainScreen from '../screens/main';
 import DrawerMenuItems from '../screens/drawerMenu';
 import HistoryScreen from '../screens/history';
 import EducationScreen from '../screens/education';
+import SportScreen from '../screens/sport';
+import CultureScreen from '../screens/culture';
 
 const DrawerMenu = createDrawerNavigator(
   {
@@ -16,6 +18,12 @@ const DrawerMenu = createDrawerNavigator(
     },
     Education: {
       screen: EducationScreen,
+    },
+    Sport: {
+      screen: SportScreen,
+    },
+    Culture: {
+      screen: CultureScreen,
     },
   },
   {

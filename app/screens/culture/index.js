@@ -7,22 +7,33 @@ import {titles} from '../../constants/strings';
 import {bigText} from '../../constants/moreText';
 import icons from '../../constants/icons';
 
-const HistoryScreen = ({navigation}) => {
+const CultureScreen = ({navigation}) => {
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent
-          iconName={icons.MENU_HISTORY}
-          title={titles.MENU_HISTORY}
+          iconName={icons.MENU_CULTURE}
+          title={titles.MENU_CULTURE}
           navigation={navigation}
         />
       </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <Text style={styles.bigText}>{bigText.HISTORY_TEXT}</Text>
+        <Text style={styles.bigText}>{bigText.CULTURE_TEXT}</Text>
+        <View style={styles.titleView}>
+          <Text style={styles.title}>{titles.CULTURE_TITLE_ONE}</Text>
+        </View>
+        <View
+          style={{
+            width: '100%',
+            height: 350,
+            backgroundColor: 'green',
+          }}>
+          <Text>{bigText.CULTURE_TEXT_TWO}</Text>
+        </View>
       </ScrollView>
     </View>
   );
 };
 
-export default HistoryScreen;
+export default CultureScreen;

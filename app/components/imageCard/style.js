@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {colors} from '../../constants/colors';
+import {myFonts} from '../../constants/fonts';
 
 const styles = StyleSheet.create({
   mainView: {
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 25,
-    fontFamily: 'AvenirNextCyr-Bold',
+    fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
   scrollView: {

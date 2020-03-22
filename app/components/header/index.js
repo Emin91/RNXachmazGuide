@@ -3,7 +3,7 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import styles from './style';
 import icons from '../../constants/icons';
 
-const HeaderComponent = ({navigation, title, iconName = icons.SMALL_LOGO}) => {
+const HeaderComponent = ({navigation, title, iconName = icons.MENU_CITY}) => {
   return (
     <View style={styles.mainView}>
       <View style={styles.headerView}>

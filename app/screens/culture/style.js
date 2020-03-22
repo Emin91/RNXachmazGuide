@@ -17,9 +17,20 @@ const styles = StyleSheet.create({
   },
   bigText: {
     fontSize: 15,
-    paddingLeft: 12,
+    paddingHorizontal: 12,
     fontFamily: myFonts.MONTSERRAT,
     color: colors.WHITE,
+  },
+  titleView: {
+    width: '100%',
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 15,
+    fontFamily: myFonts.ALWAYS_RADIO,
+    color: colors.ORANGE,
   },
 });
 
