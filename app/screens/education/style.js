@@ -10,9 +10,6 @@ const styles = StyleSheet.create({
   headerComponent: {
     flex: 0.13,
   },
-  descriptionView: {
-    flex: 0.45,
-  },
   scrollView: {
     flex: 0.55,
   },
@@ -32,7 +29,6 @@ const styles = StyleSheet.create({
   },
   //Card
   cardView: {
-    flex: 1,
     marginTop: 15,
     borderRadius: 10,
     marginHorizontal: 8,

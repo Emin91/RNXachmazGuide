@@ -23,14 +23,43 @@ const styles = StyleSheet.create({
   },
   titleView: {
     width: '100%',
-    height: 40,
+    paddingVertical: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
-    fontSize: 15,
-    fontFamily: myFonts.ALWAYS_RADIO,
+    fontSize: 16,
+    fontFamily: myFonts.ULTIMA_PRO,
     color: colors.ORANGE,
+  },
+  descriptionView: {
+    width: '100%',
+    justifyContent: 'center',
+  },
+  descriptionText: {
+    fontSize: 15,
+    paddingHorizontal: 10,
+    fontFamily: myFonts.ULTIMA_PRO,
+    color: colors.WHITE,
+  },
+  infoView: {
+    width: '100%',
+    paddingHorizontal: 6,
+    justifyContent: 'center',
+  },
+  info: {
+    flex: 1,
+    marginVertical: 4,
+    paddingHorizontal: 6,
+    backgroundColor: colors.ORANGE,
+    borderRadius: 5,
+  },
+  infoText: {
+    fontSize: 13,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    fontFamily: myFonts.ULTIMA_PRO,
+    color: colors.SUB_CLAY,
   },
 });
 

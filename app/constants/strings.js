@@ -34,4 +34,16 @@ export const titles = {
   //Culture
   CULTURE_TITLE_ONE: 'Mədəniyyət, təhsil və səhiyyə müəssisələri',
   CULTURE_TITLE_TWO: 'Hal-hazırda Xaçmaz rayonunda',
+  CULTURE_INFO_ONE:
+    'MKS üzrə 65 müəssisə - 1 mərkəzi, 2 şəhər, 1 uşaq, 59 kənd və 2 qəsəbə kitabxana filialı fəaliyyət göstərir.',
+  CULTURE_INFO_TWO:
+    'Heydər Əliyev adına Mədəniyyət Mərkəzi üzrə 50 müəssisə  - 1 mərkəz,1 şəhər (Xudat), 3 kənd folklor evləri, 45 klub müəssisəsi (kənd Diyarşünaslıq, kənd Folklor, kənd Sənətkarlıq) fəaliyyət göstərir.',
+  CULTURE_INFO_THREE:
+    'Heydər Əliyev Mərkəzi üzrə 3 müəssisə - 1 mərkəz, 1şəhər (Xudat), 1qəsəbə (Yalama) Heydər Əliyev muzey filialları.',
+  CULTURE_INFO_FOUR:
+    'Tarix Diyarşünaslıq muzeyi üzrə 3 müəssisə -1 şəhər (Tarix Diyarşünaslıq muzeyi), 2 şəhər filial (Xalça və Döyüş şöhrəti muzeyi).',
+  CULTURE_INFO_FIVE:
+    '1 Rəsm Qalereyası, 1 Şəxsiyyətlər muzeyi, 1 Əzizi Əliyev muzeyi, 1 Bayraq muzeyi, 1 Zərifə Əliyeva adına muzey, 1 Xalqlar dostluğu muzeyi olmaqla ümumilikdə 12 muzey fəaliyyət göstərir.',
+  CULTURE_INFO_SIX:
+    'Cari ilin 2-ci rübündə Xaçmaz rayon Mərkəzi Kitabxanasına 3956 adda yeni kitab daxil olmuş, fondda olan kitabların sayı 587989-a çatmışdır. Oxuyucu sayı isə 7536 nəfər olmuşdur.',
 };

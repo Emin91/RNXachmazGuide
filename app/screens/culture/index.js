@@ -6,6 +6,8 @@ import styles from './style';
 import {titles} from '../../constants/strings';
 import {bigText} from '../../constants/moreText';
 import icons from '../../constants/icons';
+import {DescriptionTitle} from './components/descriptionTitle';
+import {DescriptionItemsList} from './components/descriptionItemsList';
 
 const CultureScreen = ({navigation}) => {
   return (
@@ -20,16 +22,13 @@ const CultureScreen = ({navigation}) => {
       </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
         <Text style={styles.bigText}>{bigText.CULTURE_TEXT}</Text>
-        <View style={styles.titleView}>
-          <Text style={styles.title}>{titles.CULTURE_TITLE_ONE}</Text>
+        <DescriptionTitle title={titles.CULTURE_TITLE_ONE} />
+        <View style={styles.descriptionView}>
+          <Text style={styles.descriptionText}>{bigText.CULTURE_TEXT_TWO}</Text>
         </View>
-        <View
-          style={{
-            width: '100%',
-            height: 350,
-            backgroundColor: 'green',
-          }}>
-          <Text>{bigText.CULTURE_TEXT_TWO}</Text>
+        <DescriptionTitle title={titles.CULTURE_TITLE_TWO} />
+        <View style={styles.infoView}>
+          <DescriptionItemsList />
         </View>
       </ScrollView>
     </View>

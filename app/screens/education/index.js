@@ -21,7 +21,7 @@ const EducationScreen = ({navigation}) => {
         />
       </View>
       <View style={{flex: 0.88}}>
-        <View style={styles.descriptionView}>
+        <View>
           <Text style={styles.descriptionText}>{bigText.EDUCATION_TITLE}</Text>
           <Text style={styles.descriptionListTitle}>
             {titles.CARD_ITEM_NAME}
