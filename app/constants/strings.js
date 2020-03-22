@@ -15,6 +15,7 @@ export const titles = {
   MENU_EXECUTIVE: 'İcra Hakimiyyəti',
   MENU_ABOUT_APP: 'App haqqında',
   MENU_EXIT: 'Çıxış',
+  PAGE_IS_ACTIVE: 'Səhifə aktivdir',
   //Cards titles
   CARDS_TITLE_PHOTO: 'Foto qalereya',
   CARDS_TITLE_SHORT_INFO: 'Qısa məlumat',

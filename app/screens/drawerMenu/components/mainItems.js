@@ -1,6 +1,26 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, BackHandler} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ToastAndroid,
+  BackHandler,
+} from 'react-native';
 import styles from '../style';
+import {titles} from '../../../constants/strings';
+
+const onItemPress = (navigation, index, nav) => {
+  console.log('getActiveRouteName', index);
+  if (navigation.state.index !== index) {
+    if (index !== 10) {
+      navigation.navigate(nav);
+    } else {
+      BackHandler.exitApp();
+    }
+  } else {
+    ToastAndroid.show(titles.PAGE_IS_ACTIVE, ToastAndroid.SHORT);
+  }
+};
 
 const MenuItems = ({navigation, arrays}) => {
   return (
@@ -9,9 +29,7 @@ const MenuItems = ({navigation, arrays}) => {
         return (
           <TouchableOpacity
             style={styles.touchableItems}
-            onPress={() =>
-              index == 10 ? BackHandler.exitApp() : navigation.navigate(nav)
-            }
+            onPress={() => onItemPress(navigation, index, nav)}
             activeOpacity={0.6}
             key={title}>
             <Text
