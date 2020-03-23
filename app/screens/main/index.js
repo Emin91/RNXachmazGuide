@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, ScrollView, StatusBar} from 'react-native';
+import {View, Text, ScrollView, StatusBar} from 'react-native';
 import {cards} from './components/cardsArray';
 import {colors} from '../../constants/colors';
 import {titles} from '../../constants/strings';
@@ -10,6 +10,10 @@ import HeaderComponent from '../../components/header';
 import styles from './style';
 
 const MainScreen = ({navigation}) => {
+  useEffect(() => {
+    navigation.toggleDrawer();
+  }, []);
+
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.SUB_CLAY} />
