@@ -3,14 +3,12 @@ import {View, Text, Image} from 'react-native';
 import {menuItemsListOne, menuItemsListTwo} from './components/menuItemsList';
 import {images} from '../../constants/images';
 import {titles} from '../../constants/strings';
-import styles from './style';
 import MenuItems from './components/mainItems';
-import {iconsObj} from '../../constants/iconsObject';
 import Wheather from './components/wheather';
+import styles from './style';
 
 const DrawerMenuItems = ({navigation}) => {
   const [data, setData] = useState({});
-  console.log('data', data);
   useEffect(() => {
     fetch(
       'http://api.openweathermap.org/data/2.5/weather?q=Xacmaz&appid=4486e591bd278be78e989429da35190c&units=metric',
@@ -21,7 +19,6 @@ const DrawerMenuItems = ({navigation}) => {
   }, []);
 
   const {weather} = data;
-  console.log('weather', weather);
 
   return (
     <View style={styles.mainView}>

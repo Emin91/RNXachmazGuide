@@ -54,10 +54,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // backgroundColor: 'red',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
   },
   degreeView: {
     flex: 0.3,
@@ -71,8 +68,8 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   whIcon: {
-    width: '20%',
-    height: '98%',
+    width: '17%',
+    height: '100%',
     marginLeft: 7,
   },
   infoView: {

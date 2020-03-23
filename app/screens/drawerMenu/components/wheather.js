@@ -3,6 +3,22 @@ import {View, Text, Image} from 'react-native';
 import {iconsObj} from '../../../constants/iconsObject';
 import styles from '../style';
 
+const newIcon = {
+  wind: require('../../../assets/icons/wheather/wind.png'),
+  pressure: require('../../../assets/icons/wheather/pressure.png'),
+  humidity: require('../../../assets/icons/wheather/humidity.png'),
+};
+
+const SmallIcon = ({iconName}) => {
+  return (
+    <Image
+      resizeMode={'center'}
+      style={styles.whIconSmall}
+      source={newIcon[iconName]}
+    />
+  );
+};
+
 const Wheather = ({data, dataWh}) => {
   return (
     <View style={styles.whMain}>
@@ -12,28 +28,17 @@ const Wheather = ({data, dataWh}) => {
           {`\xB0`}C
         </Text>
         <Image
+          resizeMode="center"
           style={styles.whIcon}
           source={iconsObj[dataWh[0].icon] || iconsObj['01d']}
         />
       </View>
       <View style={styles.infoView}>
-        <Image
-          resizeMode={'center'}
-          style={styles.whIconSmall}
-          source={require('../../../assets/icons/wheather/wind.png')}
-        />
-        <Text style={styles.infoText}>{data.wind.speed}km/h</Text>
-        <Image
-          resizeMode={'center'}
-          style={styles.whIconSmall}
-          source={require('../../../assets/icons/wheather/pressure.png')}
-        />
+        <SmallIcon iconName={'wind'} />
+        <Text style={styles.infoText}>{data.wind.speed} km/h</Text>
+        <SmallIcon iconName={'pressure'} />
         <Text style={styles.infoText}>{data.main.pressure} hPa</Text>
-        <Image
-          resizeMode={'center'}
-          style={styles.whIconSmall}
-          source={require('../../../assets/icons/wheather/humidity.png')}
-        />
+        <SmallIcon iconName={'humidity'} />
         <Text style={styles.infoText}>{data.main.humidity}%</Text>
       </View>
       <View style={{flex: 0.55}}></View>
