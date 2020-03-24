@@ -19,7 +19,7 @@ const SmallIcon = ({iconName}) => {
   );
 };
 
-const Wheather = ({data, dataWh}) => {
+const Wheather = ({time, data, dataWh}) => {
   return (
     <View style={styles.whMain}>
       <View style={styles.degreeView}>

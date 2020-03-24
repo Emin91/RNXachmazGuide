@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
   },
   degreeView: {
     flex: 0.3,

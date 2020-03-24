@@ -9,6 +9,7 @@ import styles from './style';
 
 const DrawerMenuItems = ({navigation}) => {
   const [data, setData] = useState({});
+
   useEffect(() => {
     fetch(
       'http://api.openweathermap.org/data/2.5/weather?q=Xacmaz&appid=4486e591bd278be78e989429da35190c&units=metric',

@@ -28,7 +28,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_ECONOMY,
-    nav: '',
+    nav: 'Economy',
     index: 5,
   },
   {

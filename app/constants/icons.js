@@ -14,4 +14,5 @@ export default icons = {
   MENU_GEO: require('../assets/icons/geo.png'),
   MENU_ABOUT: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
+  MODAL_CLOSE_BUTTON: require('../assets/icons/close.png'),
 };

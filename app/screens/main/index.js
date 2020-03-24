@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {View, Text, ScrollView, StatusBar} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {View, ScrollView, StatusBar, BackHandler} from 'react-native';
 import {cards} from './components/cardsArray';
 import {colors} from '../../constants/colors';
 import {titles} from '../../constants/strings';
@@ -8,14 +8,28 @@ import ImageCardComponent from '../../components/imageCard';
 import TextCardComponent from '../../components/textCard';
 import HeaderComponent from '../../components/header';
 import styles from './style';
+import ModalExit from './components/modalExit';
 
 const MainScreen = ({navigation}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+
   useEffect(() => {
-    navigation.toggleDrawer();
+    const backAction = () => {
+      setModalVisible(true);
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      backAction,
+    );
+
+    return () => backHandler.remove();
   }, []);
 
   return (
     <View style={styles.mainView}>
+      <ModalExit visible={modalVisible} setVisible={setModalVisible} />
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />

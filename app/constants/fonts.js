@@ -4,4 +4,5 @@ export const myFonts = {
   ULTIMA_PRO: 'UltimaPro',
   MONTSERRAT_BOLD: 'MontserratAlternates-Bold',
   LATINO: 'Latnino',
+  BALOO: 'Baloo-Regular',
 };

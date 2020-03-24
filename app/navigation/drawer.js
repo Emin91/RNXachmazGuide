@@ -7,6 +7,33 @@ import HistoryScreen from '../screens/history';
 import EducationScreen from '../screens/education';
 import SportScreen from '../screens/sport';
 import CultureScreen from '../screens/culture';
+import EconomyScreen from '../screens/economy';
+import MapScreen from '../screens/map';
+import {createStackNavigator} from 'react-navigation-stack';
+import {colors} from '../constants/colors';
+
+const StackNav = createStackNavigator(
+  {
+    History: {
+      screen: HistoryScreen,
+      navigationOptions: ({}) => ({
+        title: null,
+        headerTransparent: true,
+        headerStyle: {
+          backgroundColor: colors.MAIN_CINDER,
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+      }),
+    },
+    Map: {
+      screen: MapScreen,
+    },
+  },
+  {
+    initialRouteName: 'History',
+  },
+);
 
 const DrawerMenu = createDrawerNavigator(
   {
@@ -14,7 +41,7 @@ const DrawerMenu = createDrawerNavigator(
       screen: MainScreen,
     },
     History: {
-      screen: HistoryScreen,
+      screen: StackNav,
     },
     Education: {
       screen: EducationScreen,
@@ -24,6 +51,9 @@ const DrawerMenu = createDrawerNavigator(
     },
     Culture: {
       screen: CultureScreen,
+    },
+    Economy: {
+      screen: EconomyScreen,
     },
   },
   {
