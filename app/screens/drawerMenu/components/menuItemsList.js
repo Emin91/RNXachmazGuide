@@ -38,7 +38,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_GEO,
-    nav: '',
+    nav: 'Geography',
     index: 7,
   },
   {

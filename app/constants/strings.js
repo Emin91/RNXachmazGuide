@@ -19,11 +19,14 @@ export const titles = {
   //History
   HISTORY_MAP_TITLE: 'Xaçmazın xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
+  //Geography
+  GEO_TITLE: 'Coğrafi mövqeyi',
   //Sport
   SPORT_OLIMP: 'Xaçmaz Olimpiya İdman Kompleksi',
   //Economy
   ECONOMY_TITLE_ONE: 'İqtisadi xarakteristikası',
   ECONOMY_TITLE_TWO: 'Quba-Xaçmaz İqtisadiyyatı',
+  ECONOMY_TITLE_THREE: 'Təbii sərvətləri',
   //Cards titles
   CARDS_TITLE_PHOTO: 'Foto qalereya',
   CARDS_TITLE_SHORT_INFO: 'Qısa məlumat',

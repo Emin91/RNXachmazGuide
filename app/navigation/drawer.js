@@ -11,6 +11,7 @@ import EconomyScreen from '../screens/economy';
 import MapScreen from '../screens/map';
 import {createStackNavigator} from 'react-navigation-stack';
 import {colors} from '../constants/colors';
+import GeographyScreen from '../screens/geography';
 
 const StackNav = createStackNavigator(
   {
@@ -54,6 +55,9 @@ const DrawerMenu = createDrawerNavigator(
     },
     Economy: {
       screen: EconomyScreen,
+    },
+    Geography: {
+      screen: GeographyScreen,
     },
   },
   {
