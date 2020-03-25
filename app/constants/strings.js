@@ -19,6 +19,13 @@ export const titles = {
   //History
   HISTORY_MAP_TITLE: 'Xaçmazın xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
+  //Executive
+  EXECUTIVE_ITEM_ONE: 'İcra hakimiyyətinin başçısı',
+  EXECUTIVE_ITEM_TWO: 'Aparatın strukturu',
+  EXECUTIVE_ITEM_THREE: 'Şura',
+  EXECUTIVE_ITEM_FOUR: 'Bələdiyyələr',
+  EXECUTIVE_ITEM_FIVE: 'Vətəndaşların qəbulu',
+  EXECUTIVE_ITEM_SIX: 'İnzibati Ərazi Dairəsi',
   //Geography
   GEO_TITLE: 'Coğrafi mövqeyi',
   //Sport

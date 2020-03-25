@@ -33,7 +33,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_PHOTOS,
-    nav: '',
+    nav: 'Photos',
     index: 6,
   },
   {
@@ -43,7 +43,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_EXECUTIVE,
-    nav: '',
+    nav: 'Executive',
     index: 8,
   },
 ];
@@ -51,7 +51,7 @@ export const menuItemsListOne = [
 export const menuItemsListTwo = [
   {
     title: titles.MENU_ABOUT_APP,
-    nav: '',
+    nav: 'AboutApp',
     index: 9,
   },
   {

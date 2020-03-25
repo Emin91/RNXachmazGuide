@@ -1,4 +1,3 @@
-import React from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import MainScreen from '../screens/main';
@@ -12,8 +11,11 @@ import MapScreen from '../screens/map';
 import {createStackNavigator} from 'react-navigation-stack';
 import {colors} from '../constants/colors';
 import GeographyScreen from '../screens/geography';
+import PhotosScreen from '../screens/photos';
+import ExecutiveScreen from '../screens/executive';
+import AboutAppScreen from '../screens/aboutApp';
 
-const StackNav = createStackNavigator(
+const HistoryStackNav = createStackNavigator(
   {
     History: {
       screen: HistoryScreen,
@@ -38,27 +40,16 @@ const StackNav = createStackNavigator(
 
 const DrawerMenu = createDrawerNavigator(
   {
-    Main: {
-      screen: MainScreen,
-    },
-    History: {
-      screen: StackNav,
-    },
-    Education: {
-      screen: EducationScreen,
-    },
-    Sport: {
-      screen: SportScreen,
-    },
-    Culture: {
-      screen: CultureScreen,
-    },
-    Economy: {
-      screen: EconomyScreen,
-    },
-    Geography: {
-      screen: GeographyScreen,
-    },
+    Main: MainScreen,
+    History: HistoryStackNav,
+    Education: EducationScreen,
+    Sport: SportScreen,
+    Culture: CultureScreen,
+    Economy: EconomyScreen,
+    Photos: PhotosScreen,
+    Geography: GeographyScreen,
+    Executive: ExecutiveScreen,
+    AboutApp: AboutAppScreen,
   },
   {
     initialRouteName: 'Main',

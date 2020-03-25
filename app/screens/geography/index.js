@@ -1,13 +1,12 @@
 import React from 'react';
 import {View, Text, ScrollView, StatusBar} from 'react-native';
 import {DescriptionTitle} from '../culture/components/descriptionTitle';
-import {description} from './components/description';
+import {bigText} from '../../constants/moreText';
 import {titles} from '../../constants/strings';
 import {colors} from '../../constants/colors';
 import icons from '../../constants/icons';
 import styles from './style';
 import HeaderComponent from '../../components/header';
-import {bigText} from '../../constants/moreText';
 
 const GeographyScreen = ({navigation}) => {
   return (
