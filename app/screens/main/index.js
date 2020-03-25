@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {View, ScrollView, StatusBar, BackHandler} from 'react-native';
 import {cards} from './components/cardsArray';
 import {colors} from '../../constants/colors';
@@ -12,20 +12,6 @@ import ModalExit from './components/modalExit';
 
 const MainScreen = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
-
-  useEffect(() => {
-    const backAction = () => {
-      setModalVisible(true);
-      return true;
-    };
-
-    const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      backAction,
-    );
-
-    return () => backHandler.remove();
-  }, []);
 
   return (
     <View style={styles.mainView}>
