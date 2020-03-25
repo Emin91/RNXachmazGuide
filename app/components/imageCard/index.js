@@ -27,7 +27,7 @@ const ImageCardComponent = () => {
           renderSlides={
             <>
               <Image
-                source={require('../../assets/images/bg.jpg')}
+                source={require('../../assets/images/menuImage.jpg')}
                 // resizeMode={'center'}
                 style={{width: 350, height: '100%'}}
               />
@@ -65,7 +65,6 @@ const ImageCardComponent = () => {
 
 const styles2 = StyleSheet.create({
   slider: {
-    // alignSelf: 'center',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'pink',

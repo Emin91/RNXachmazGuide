@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   whIcon: {
-    width: '17%',
+    width: '10%',
     height: '100%',
     marginLeft: 7,
   },

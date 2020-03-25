@@ -19,6 +19,11 @@ export const titles = {
   //History
   HISTORY_MAP_TITLE: 'Xaçmazın xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
+  //Sport
+  SPORT_OLIMP: 'Xaçmaz Olimpiya İdman Kompleksi',
+  //Economy
+  ECONOMY_TITLE_ONE: 'İqtisadi xarakteristikası',
+  ECONOMY_TITLE_TWO: 'Quba-Xaçmaz İqtisadiyyatı',
   //Cards titles
   CARDS_TITLE_PHOTO: 'Foto qalereya',
   CARDS_TITLE_SHORT_INFO: 'Qısa məlumat',
@@ -26,6 +31,10 @@ export const titles = {
   CARDS_TITLE_POPULATION: 'Əhalisi',
   //Text
   POPULATION_PREFICS: 'yaşlı əhali',
+  //Modal
+  MODAL_TITLE: 'Siz çıxmaq istəyirsiz?',
+  MODAL_CANCEL: 'Xeyir',
+  MODAL_EXIT: 'Bəli',
   PEOPLE_COUNT: 'nəfər',
   //Education cards
   CARD_ITEM_NAME: 'Məktəblər',

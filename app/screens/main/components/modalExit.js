@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import styles from '../style';
 import icons from '../../../constants/icons';
+import {titles} from '../../../constants/strings';
 
 const ModalExit = ({visible, setVisible}) => {
   return (
@@ -33,18 +34,18 @@ const ModalExit = ({visible, setVisible}) => {
             </TouchableOpacity>
           </View>
           <View style={styles.titleView}>
-            <Text style={styles.title}>Siz çıxmaq istəyirsiz?</Text>
+            <Text style={styles.title}>{titles.MODAL_TITLE}</Text>
           </View>
           <View style={styles.buttonsView}>
             <TouchableOpacity
               activeOpacity={0.4}
               onPress={() => setVisible(false)}>
-              <Text style={styles.buttons}>Xeyir</Text>
+              <Text style={styles.buttons}>{titles.MODAL_CANCEL}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               activeOpacity={0.4}
               onPress={() => BackHandler.exitApp()}>
-              <Text style={styles.buttons}>Bəli</Text>
+              <Text style={styles.buttons}>{titles.MODAL_EXIT}</Text>
             </TouchableOpacity>
           </View>
         </View>
