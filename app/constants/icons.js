@@ -12,6 +12,7 @@ export default icons = {
   MENU_ECONOMY: require('../assets/icons/economy.png'),
   MENU_PHOTOS: require('../assets/icons/photos.png'),
   MENU_GEO: require('../assets/icons/geo.png'),
+  MENU_EXECUTIVE: require('../assets/icons/city_head.png'),
   MENU_ABOUT: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
   MODAL_CLOSE_BUTTON: require('../assets/icons/close.png'),

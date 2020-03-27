@@ -14,8 +14,8 @@ const ExecutiveScreen = ({navigation}) => {
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent
-          iconName={icons.MENU_GEO}
-          title={titles.MENU_GEO}
+          iconName={icons.MENU_EXECUTIVE}
+          title={titles.MENU_EXECUTIVE}
           navigation={navigation}
         />
       </View>

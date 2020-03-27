@@ -4,22 +4,11 @@ import ExecutiveScreen from '../../screens/executive';
 
 export const ExecutiveStackNav = createStackNavigator(
   {
-    Main: {
-      screen: ExecutiveScreen,
-      navigationOptions: {
-        title: null,
-        headerShown: false,
-      },
-    },
-    Head: {
-      screen: ExecutiveHeadScreen,
-      navigationOptions: {
-        title: null,
-        headerTransparent: true,
-      },
-    },
+    Main: ExecutiveScreen,
+    Head: ExecutiveHeadScreen,
   },
   {
     initialRouteName: 'Main',
+    headerMode: 'none',
   },
 );

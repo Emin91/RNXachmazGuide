@@ -6,4 +6,5 @@ export const images = {
   IMG_HISTORY: require('../assets/images/tarixMuzeyi.jpg'),
   IMG_OLIMP_ONE: require('../assets/images/olimp.jpg'),
   IMG_OLIMP_TWO: require('../assets/images/olimp_2.jpg'),
+  HEAD: require('../assets/images/ElnurRzayev.jpg'),
 };

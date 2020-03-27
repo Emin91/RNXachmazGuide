@@ -20,6 +20,7 @@ export const titles = {
   HISTORY_MAP_TITLE: 'Xaçmazın xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
   //Executive
+  HEAD_NAME: 'Rzayev Elnur Şahbaz oğlu',
   EXECUTIVE_ITEM_ONE: 'İcra hakimiyyətinin başçısı',
   EXECUTIVE_ITEM_TWO: 'Aparatın strukturu',
   EXECUTIVE_ITEM_THREE: 'Şura',
