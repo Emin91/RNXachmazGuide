@@ -19,16 +19,18 @@ const EconomyScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        {description.map(({descriptionTitle, descriptionText}) => {
-          return (
-            <View key={descriptionTitle}>
-              <DescriptionTitle title={descriptionTitle} />
-              <Text style={styles.bigText}>{descriptionText}</Text>
-            </View>
-          );
-        })}
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          {description.map(({descriptionTitle, descriptionText}) => {
+            return (
+              <View key={descriptionTitle}>
+                <DescriptionTitle title={descriptionTitle} />
+                <Text style={styles.bigText}>{descriptionText}</Text>
+              </View>
+            );
+          })}
+        </ScrollView>
+      </View>
     </View>
   );
 };

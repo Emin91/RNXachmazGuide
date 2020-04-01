@@ -6,7 +6,7 @@ export const Buttons = ({navigation, itemsTitle}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.6}
-      onPress={() => navigation.navigate('Head')}
+      onPress={() => navigation.navigate('HeadOf')}
       style={styles.itemView}>
       <Text style={styles.itemText}>{itemsTitle}</Text>
     </TouchableOpacity>

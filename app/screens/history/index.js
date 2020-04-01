@@ -45,20 +45,22 @@ const HistoryScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <Text style={styles.bigText}>{bigText.HISTORY_TEXT}</Text>
-        <RenderImage
-          navigation={navigation}
-          titles={titles.HISTORY_MAP_TITLE}
-          img={images.IMG_MAP}
-          active={false}
-        />
-        <RenderImage
-          titles={titles.HISTORY_MUZEUM}
-          img={images.IMG_HISTORY}
-          active={true}
-        />
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <Text style={styles.bigText}>{bigText.HISTORY_TEXT}</Text>
+          <RenderImage
+            navigation={navigation}
+            titles={titles.HISTORY_MAP_TITLE}
+            img={images.IMG_MAP}
+            active={false}
+          />
+          <RenderImage
+            titles={titles.HISTORY_MUZEUM}
+            img={images.IMG_HISTORY}
+            active={true}
+          />
+        </ScrollView>
+      </View>
     </View>
   );
 };

@@ -20,17 +20,21 @@ const CultureScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <Text style={styles.bigText}>{bigText.CULTURE_TEXT}</Text>
-        <DescriptionTitle title={titles.CULTURE_TITLE_ONE} />
-        <View style={styles.descriptionView}>
-          <Text style={styles.descriptionText}>{bigText.CULTURE_TEXT_TWO}</Text>
-        </View>
-        <DescriptionTitle title={titles.CULTURE_TITLE_TWO} />
-        <View style={styles.infoView}>
-          <DescriptionItemsList />
-        </View>
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <Text style={styles.bigText}>{bigText.CULTURE_TEXT}</Text>
+          <DescriptionTitle title={titles.CULTURE_TITLE_ONE} />
+          <View style={styles.descriptionView}>
+            <Text style={styles.descriptionText}>
+              {bigText.CULTURE_TEXT_TWO}
+            </Text>
+          </View>
+          <DescriptionTitle title={titles.CULTURE_TITLE_TWO} />
+          <View style={styles.infoView}>
+            <DescriptionItemsList />
+          </View>
+        </ScrollView>
+      </View>
     </View>
   );
 };

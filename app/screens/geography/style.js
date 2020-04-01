@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.MAIN_CINDER,
   },
   headerComponent: {
-    flex: 0.15,
+    flex: 0.1,
   },
   scrollView: {
     flex: 1,

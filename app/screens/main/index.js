@@ -20,20 +20,22 @@ const MainScreen = ({navigation}) => {
       <View style={styles.headerComponent}>
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <ImageCardComponent />
-        {cards.map(({headerTitle, textContent}) => {
-          return (
-            <View key={headerTitle}>
-              <TextCardComponent
-                headerTitle={headerTitle}
-                textContent={textContent}
-              />
-            </View>
-          );
-        })}
-        <ItemsCardComponent headerTitle={titles.CARDS_TITLE_POPULATION} />
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <ImageCardComponent />
+          {cards.map(({headerTitle, textContent}) => {
+            return (
+              <View key={headerTitle}>
+                <TextCardComponent
+                  headerTitle={headerTitle}
+                  textContent={textContent}
+                />
+              </View>
+            );
+          })}
+          <ItemsCardComponent headerTitle={titles.CARDS_TITLE_POPULATION} />
+        </ScrollView>
+      </View>
     </View>
   );
 };

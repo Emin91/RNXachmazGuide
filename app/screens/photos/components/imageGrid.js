@@ -4,6 +4,7 @@ import {LightBox} from './lightBox';
 import {data} from './imageData';
 import MasonryList from 'react-native-masonry-list';
 import {colors} from '../../../constants/colors';
+import {myFonts} from '../../../constants/fonts';
 
 const ImageGrid = () => {
   const [isVisible, setVisible] = useState(false);
@@ -31,14 +32,13 @@ const ImageGrid = () => {
               height: 30,
               width: '98%',
               alignSelf: 'center',
-              position: 'absolute',
               alignItems: 'center',
-              backgroundColor: 'rgba(0, 0, 0, 0.7)',
+              backgroundColor: colors.ORANGE,
               justifyContent: 'center',
             }}>
-            <Text>
-              {title}
-              {height}
+            <Text
+              style={{color: colors.SUB_CLAY, fontFamily: myFonts.ARCH_BOLD}}>
+              Size {height}
             </Text>
           </View>
         )}

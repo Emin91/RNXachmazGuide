@@ -34,12 +34,14 @@ const SportScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <Text style={styles.bigText}>{bigText.SPORT_TEXT}</Text>
-        <DescriptionTitle title={titles.SPORT_OLIMP} />
-        <ImagesView img={images.IMG_OLIMP_ONE} />
-        <ImagesView img={images.IMG_OLIMP_TWO} />
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <Text style={styles.bigText}>{bigText.SPORT_TEXT}</Text>
+          <DescriptionTitle title={titles.SPORT_OLIMP} />
+          <ImagesView img={images.IMG_OLIMP_ONE} />
+          <ImagesView img={images.IMG_OLIMP_TWO} />
+        </ScrollView>
+      </View>
     </View>
   );
 };

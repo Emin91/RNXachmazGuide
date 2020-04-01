@@ -19,11 +19,13 @@ const GeographyScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <DescriptionTitle title={titles.GEO_TITLE} />
-        <Text style={styles.bigText}>{bigText.GEO_TEXT_ONE}</Text>
-        <Text style={styles.bigText}>{bigText.GEO_TEXT_TWO}</Text>
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <DescriptionTitle title={titles.GEO_TITLE} />
+          <Text style={styles.bigText}>{bigText.GEO_TEXT_ONE}</Text>
+          <Text style={styles.bigText}>{bigText.GEO_TEXT_TWO}</Text>
+        </ScrollView>
+      </View>
     </View>
   );
 };

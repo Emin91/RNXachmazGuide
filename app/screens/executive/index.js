@@ -19,15 +19,21 @@ const ExecutiveScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <ScrollView overScrollMode="never" style={styles.scrollView}>
-        <View style={{flex: 1, paddingTop: 20}}>
-          {itemsObj.map(({title}) => {
-            return (
-              <Buttons key={title} navigation={navigation} itemsTitle={title} />
-            );
-          })}
-        </View>
-      </ScrollView>
+      <View style={{flex: 0.9}}>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
+          <View style={{flex: 1, paddingTop: 20}}>
+            {itemsObj.map(({title}) => {
+              return (
+                <Buttons
+                  key={title}
+                  navigation={navigation}
+                  itemsTitle={title}
+                />
+              );
+            })}
+          </View>
+        </ScrollView>
+      </View>
     </View>
   );
 };

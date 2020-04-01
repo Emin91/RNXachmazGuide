@@ -20,7 +20,7 @@ const EducationScreen = ({navigation}) => {
           navigation={navigation}
         />
       </View>
-      <View style={{flex: 0.88}}>
+      <View style={{flex: 0.9}}>
         <View>
           <Text style={styles.descriptionText}>{bigText.EDUCATION_TITLE}</Text>
           <Text style={styles.descriptionListTitle}>

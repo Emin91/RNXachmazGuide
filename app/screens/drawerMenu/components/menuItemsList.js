@@ -43,7 +43,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_EXECUTIVE,
-    nav: 'Executive',
+    nav: 'Head',
     index: 8,
   },
 ];

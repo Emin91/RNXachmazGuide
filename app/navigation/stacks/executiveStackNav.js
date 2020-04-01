@@ -1,14 +1,14 @@
-import {createStackNavigator} from 'react-navigation-stack';
 import ExecutiveHeadScreen from '../../screens/executiveHead';
 import ExecutiveScreen from '../../screens/executive';
+import {createStackNavigator} from 'react-navigation-stack';
 
 export const ExecutiveStackNav = createStackNavigator(
   {
-    Main: ExecutiveScreen,
-    Head: ExecutiveHeadScreen,
+    ExecutList: ExecutiveScreen,
+    HeadOf: ExecutiveHeadScreen,
   },
   {
-    initialRouteName: 'Main',
+    initialRouteName: 'ExecutList',
     headerMode: 'none',
   },
 );

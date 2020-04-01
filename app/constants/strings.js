@@ -27,6 +27,9 @@ export const titles = {
   EXECUTIVE_ITEM_FOUR: 'Bələdiyyələr',
   EXECUTIVE_ITEM_FIVE: 'Vətəndaşların qəbulu',
   EXECUTIVE_ITEM_SIX: 'İnzibati Ərazi Dairəsi',
+  //Photos
+  PHOTOS_TITLE_ONE: 'Xaçmaz şəhəri',
+  PHOTOS_TITLE_TWO: 'Prezidentin Xaçmaza səfəri',
   //Geography
   GEO_TITLE: 'Coğrafi mövqeyi',
   //Sport

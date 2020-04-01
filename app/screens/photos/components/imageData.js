@@ -26,4 +26,14 @@ export const data = [
     title: 'Test 2',
     source: images.IMG_HISTORY,
   },
+  {
+    dimensions: {flex: 1, width: 200, height: randomInteger(150, 350)},
+    title: 'Test',
+    source: images.IMG_3,
+  },
+  {
+    dimensions: {flex: 1, width: 200, height: randomInteger(150, 350)},
+    title: 'Test 2',
+    source: images.IMG_2,
+  },
 ];
