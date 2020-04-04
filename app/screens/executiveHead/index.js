@@ -12,13 +12,6 @@ const ExecutiveHeadScreen = ({navigation}) => {
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.SUB_CLAY} />
-      <View style={styles.headerComponent}>
-        <HeaderComponent
-          iconName={icons.MENU_EXECUTIVE}
-          title={titles.MENU_EXECUTIVE}
-          navigation={navigation}
-        />
-      </View>
       <ScrollView overScrollMode="never" style={styles.scrollView}>
         <View
           style={{

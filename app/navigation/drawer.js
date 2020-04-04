@@ -11,9 +11,6 @@ import {HistoryStackNav} from './stacks/historyStackNav';
 import {ExecutiveStackNav} from './stacks/executiveStackNav';
 import PhotosScreen from '../screens/photos';
 import AboutAppScreen from '../screens/aboutApp';
-import ExecutiveScreen from '../screens/executive';
-import ExecutiveHeadScreen from '../screens/executiveHead';
-import TestScreen from '../screens/testScreen';
 
 const DrawerMenu = createDrawerNavigator(
   {
