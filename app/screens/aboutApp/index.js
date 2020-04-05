@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 const AboutAppScreen = () => {
   return (
     <View>
-      <Text>about app</Text>
+      <Text>sds</Text>
     </View>
   );
 };

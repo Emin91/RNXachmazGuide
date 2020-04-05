@@ -10,14 +10,14 @@ export const ExecutiveStackNav = createStackNavigator(
     ExecutList: {
       screen: ExecutiveScreen,
       navigationOptions: {
-        headerTitle: null,
+        title: null,
         headerShown: false,
       },
     },
     HeadOf: {
       screen: ExecutiveHeadScreen,
       navigationOptions: {
-        headerTitle: titles.MENU_EXECUTIVE,
+        title: titles.MENU_EXECUTIVE,
         headerTintColor: colors.WHITE,
         headerTitleStyle: {
           fontFamily: myFonts.ULTIMA_PRO,

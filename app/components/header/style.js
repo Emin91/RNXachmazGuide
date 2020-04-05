@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerTitle: {
-    fontSize: 25,
+    fontSize: 23,
     fontFamily: myFonts.ULTIMA_PRO,
     color: colors.WHITE,
   },

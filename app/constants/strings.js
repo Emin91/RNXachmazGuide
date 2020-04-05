@@ -17,7 +17,7 @@ export const titles = {
   MENU_EXIT: 'Çıxış',
   PAGE_IS_ACTIVE: 'Səhifə aktivdir',
   //History
-  HISTORY_MAP_TITLE: 'Xaçmazın xəritəsi',
+  HISTORY_MAP_TITLE: 'Xaçmaz şəhərinin xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
   //Executive
   HEAD_NAME: 'Rzayev Elnur Şahbaz oğlu',
