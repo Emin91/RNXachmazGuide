@@ -1,5 +1,5 @@
 import {Linking} from 'react-native';
-import {sendMail} from './sendMail';
+import {sendMail} from '../../../components/sendMail';
 
 const onItemPress = num => {
   switch (num) {

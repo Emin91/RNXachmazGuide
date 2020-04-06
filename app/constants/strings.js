@@ -37,6 +37,9 @@ export const titles = {
   DEV_ITEM_EMAIL: 'emin.proger@gmail.com',
   DEV_PHONE: 'Əlaqə nömrəsi',
   DEV_PHONE_NUM: '+994556382438',
+  DEV_MAIL_SEND: 'mail@xachmaz-ih.gov.az',
+  DEV_MAIL_SUBJ: 'Mövzu',
+  DEV_MAIL_BODY: 'Sizin mətn...',
   //Photos
   PHOTOS_TITLE_ONE: 'Xaçmaz şəhəri',
   PHOTOS_TITLE_TWO: 'Prezidentin Xaçmaza səfəri',
