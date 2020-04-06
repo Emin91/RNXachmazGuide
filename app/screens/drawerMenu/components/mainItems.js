@@ -3,6 +3,7 @@ import {View, Text, TouchableOpacity, BackHandler} from 'react-native';
 import styles from '../style';
 
 const onItemPress = (navigation, index, nav) => {
+  console.log('Item is ', navigation.state.index);
   if (navigation.state.index !== index) {
     if (index !== 10) {
       navigation.navigate(nav);
@@ -23,7 +24,7 @@ const MenuItems = ({navigation, arrays}) => {
             style={styles.touchableItems}
             onPress={() => onItemPress(navigation, index, nav)}
             activeOpacity={0.6}
-            key={title}>
+            key={index}>
             <Text
               style={
                 index == navigation.state.index
