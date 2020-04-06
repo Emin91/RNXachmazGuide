@@ -2,13 +2,11 @@ import React from 'react';
 import {View, ScrollView, Text, Image, StatusBar} from 'react-native';
 import {titles} from '../../constants/strings';
 import {colors} from '../../constants/colors';
-import icons from '../../constants/icons';
 import styles from './style';
-import HeaderComponent from '../../components/header';
 import {images} from '../../constants/images';
 import {bigText} from '../../constants/moreText';
 
-const ExecutiveHeadScreen = ({navigation}) => {
+const ExecutiveHeadScreen = () => {
   return (
     <View style={styles.mainView}>
       <StatusBar backgroundColor={colors.SUB_CLAY} />

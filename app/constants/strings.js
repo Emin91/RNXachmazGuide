@@ -1,7 +1,7 @@
 export const titles = {
   //All
   MAIN_TITLE: 'Xaçmaz guide',
-
+  VERSION: 'Versiya: 1.0.0',
   //Menu items
   MENU_TITLE: 'Menu',
   MENU_MAIN: 'Əsas səhifə',

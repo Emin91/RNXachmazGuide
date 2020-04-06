@@ -13,7 +13,9 @@ export default icons = {
   MENU_PHOTOS: require('../assets/icons/photos.png'),
   MENU_GEO: require('../assets/icons/geo.png'),
   MENU_EXECUTIVE: require('../assets/icons/city_head.png'),
-  MENU_ABOUT: require('../assets/icons/info.png'),
+  MENU_ABOUT: require('../assets/icons/about.png'),
+  MENU_INFO: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
+  ICON_ABOUT_APP: require('../assets/icons/aboutApp.png'),
   MODAL_CLOSE_BUTTON: require('../assets/icons/close.png'),
 };
