@@ -3,15 +3,15 @@ import {FloatingAction} from 'react-native-floating-action';
 import {actions} from '../components/actionButtonArray';
 import {colors} from '../../../constants/colors';
 
-const FloatingButton = () => {
+const FloatingButton = ({navigation}) => {
   return (
     <FloatingAction
       actions={actions}
       color={colors.ORANGE}
       distanceToEdge={20}
       actionsPaddingTopBottom={0}
-      onPressItem={(name) => {
-        console.log(`selected button: ${name}`);
+      onPressItem={() => {
+        navigation.navigate('AboutDeveloper');
       }}
     />
   );

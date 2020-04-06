@@ -27,6 +27,16 @@ export const titles = {
   EXECUTIVE_ITEM_FOUR: 'Bələdiyyələr',
   EXECUTIVE_ITEM_FIVE: 'Vətəndaşların qəbulu',
   EXECUTIVE_ITEM_SIX: 'İnzibati Ərazi Dairəsi',
+  //About Developer
+  DEV_PROFILE: 'Profil',
+  DEV_AUTHOR: 'Emin Zeynalov',
+  DEV_ITEM_NAME: 'Adı',
+  DEV_ITEM_ADRESS: 'Ünvan',
+  DEV_ITEM_LOCATION: 'Memar Əcəmi',
+  DEV_ITEM_MAIL: 'E-mail',
+  DEV_ITEM_EMAIL: 'emin.proger@gmail.com',
+  DEV_PHONE: 'Əlaqə nömrəsi',
+  DEV_PHONE_NUM: '+994556382438',
   //Photos
   PHOTOS_TITLE_ONE: 'Xaçmaz şəhəri',
   PHOTOS_TITLE_TWO: 'Prezidentin Xaçmaza səfəri',

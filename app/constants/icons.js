@@ -1,4 +1,4 @@
-export default icons = {
+export default (icons = {
   LOGO: require('../assets/icons/logo.png'),
   SMALL_LOGO: require('../assets/icons/smallIcon.png'),
   BURGER_MENU: require('../assets/icons/burger.png'),
@@ -16,6 +16,9 @@ export default icons = {
   MENU_ABOUT: require('../assets/icons/about.png'),
   MENU_INFO: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
+  ICON_FB: require('../assets/icons/fb.png'),
+  ICON_BE: require('../assets/icons/be.png'),
+  ICON_INST: require('../assets/icons/inst.png'),
   ICON_ABOUT_APP: require('../assets/icons/aboutApp.png'),
   MODAL_CLOSE_BUTTON: require('../assets/icons/close.png'),
-};
+});

@@ -51,7 +51,7 @@ export const menuItemsListOne = [
 export const menuItemsListTwo = [
   {
     title: titles.MENU_ABOUT_APP,
-    nav: 'AboutApp',
+    nav: 'About',
     index: 9,
   },
   {

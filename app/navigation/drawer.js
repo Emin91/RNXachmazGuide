@@ -10,7 +10,7 @@ import GeographyScreen from '../screens/geography';
 import {HistoryStackNav} from './stacks/historyStackNav';
 import {ExecutiveStackNav} from './stacks/executiveStackNav';
 import PhotosScreen from '../screens/photos';
-import AboutAppScreen from '../screens/aboutApp';
+import {AboutStackNav} from './stacks/aboutStackNav';
 
 const DrawerMenu = createDrawerNavigator(
   {
@@ -23,7 +23,7 @@ const DrawerMenu = createDrawerNavigator(
     Photos: PhotosScreen,
     Geography: GeographyScreen,
     Head: ExecutiveStackNav,
-    AboutApp: AboutAppScreen,
+    About: AboutStackNav,
   },
   {
     initialRouteName: 'Main',
