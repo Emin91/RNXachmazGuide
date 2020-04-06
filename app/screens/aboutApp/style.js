@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   version: {
     fontSize: 12,
-    fontFamily: myFonts.LATINO,
+    fontFamily: myFonts.MONTSERRAT,
     color: '#858585',
   },
 });
