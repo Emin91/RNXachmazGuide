@@ -8,7 +8,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_HISTORY,
-    nav: 'History',
+    nav: 'HistoryScreen',
     index: 1,
   },
   {
@@ -43,7 +43,7 @@ export const menuItemsListOne = [
   },
   {
     title: titles.MENU_EXECUTIVE,
-    nav: 'Head',
+    nav: 'ExecutList',
     index: 8,
   },
 ];

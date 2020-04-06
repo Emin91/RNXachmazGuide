@@ -7,23 +7,21 @@ import SportScreen from '../screens/sport';
 import CultureScreen from '../screens/culture';
 import EconomyScreen from '../screens/economy';
 import GeographyScreen from '../screens/geography';
-import {HistoryStackNav} from './stacks/historyStackNav';
-import {ExecutiveStackNav} from './stacks/executiveStackNav';
 import PhotosScreen from '../screens/photos';
-import AboutAppScreen from '../screens/aboutApp';
+import {AllStackNav} from './stacks/allStackNav';
 
 const DrawerMenu = createDrawerNavigator(
   {
     Main: MainScreen,
-    History: HistoryStackNav,
+    History: AllStackNav,
     Education: EducationScreen,
     Sport: SportScreen,
     Culture: CultureScreen,
     Economy: EconomyScreen,
     Photos: PhotosScreen,
     Geography: GeographyScreen,
-    Head: ExecutiveStackNav,
-    AboutApp: AboutAppScreen,
+    Head: AllStackNav,
+    AboutApp: AllStackNav,
   },
   {
     initialRouteName: 'Main',

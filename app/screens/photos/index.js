@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, StatusBar} from 'react-native';
-import {DescriptionTitle} from '../culture/components/descriptionTitle';
 import {titles} from '../../constants/strings';
 import {colors} from '../../constants/colors';
 import styles from './style';

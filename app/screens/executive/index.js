@@ -22,7 +22,7 @@ const ExecutiveScreen = ({navigation}) => {
       <View style={{flex: 0.9}}>
         <ScrollView overScrollMode="never" style={styles.scrollView}>
           <View style={{flex: 1, paddingTop: 20}}>
-            {itemsObj.map(({title}) => {
+            {itemsObj.map(({title, index}) => {
               return (
                 <Buttons
                   key={title}

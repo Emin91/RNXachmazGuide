@@ -31,6 +31,7 @@ const AboutAppScreen = ({navigation}) => {
         {textElements.map(({viewStyle, textStyle, text}) => {
           return (
             <TextViews
+              key={text}
               viewStyle={viewStyle}
               textStyle={textStyle}
               text={text}
@@ -38,7 +39,7 @@ const AboutAppScreen = ({navigation}) => {
           );
         })}
       </View>
-      <FloatingButton />
+      <FloatingButton navigation={navigation} />
     </View>
   );
 };
