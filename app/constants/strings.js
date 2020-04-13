@@ -56,6 +56,8 @@ export const titles = {
   CARDS_TITLE_SHORT_INFO: 'Qısa məlumat',
   CARDS_TITLE_GEO_POSITION: 'Coğrafi mövqeyi',
   CARDS_TITLE_POPULATION: 'Əhalisi',
+  CARDS_TITLE_NEWS: 'Xəbərlər',
+  CARDS_MORE: 'Ətraflı',
   //Text
   POPULATION_PREFICS: 'yaşlı əhali',
   //Modal

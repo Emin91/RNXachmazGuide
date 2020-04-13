@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
-import {colors} from '../../constants/colors';
-import {myFonts} from '../../constants/fonts';
+import { StyleSheet } from 'react-native';
+import { colors } from '../../constants/colors';
+import { myFonts } from '../../constants/fonts';
 
 const styles = StyleSheet.create({
   mainView: {
@@ -14,6 +14,23 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 5,
     marginBottom: 10,
+  },
+  newsView: {
+    flex: 1,
+    borderRadius: 12,
+    marginTop: 20,
+    marginHorizontal: 8,
+    backgroundColor: colors.SUB_CLAY,
+  },
+  newsTitleView: {
+    flex: 0.15,
+    paddingLeft: 10,
+    justifyContent: 'center',
+  },
+  newsTitle: {
+    fontSize: 25,
+    fontFamily: myFonts.MONTSERRAT_BOLD,
+    color: colors.ORANGE,
   },
   //ModalView
   mdView: {

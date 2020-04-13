@@ -16,9 +16,11 @@ export default (icons = {
   MENU_ABOUT: require('../assets/icons/about.png'),
   MENU_INFO: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
+  MENU_NEWS: require('../assets/icons/news.png'),
   ICON_FB: require('../assets/icons/fb.png'),
   ICON_BE: require('../assets/icons/be.png'),
   ICON_INST: require('../assets/icons/inst.png'),
+  ICON_MORE: require('../assets/icons/more.png'),
   ICON_ABOUT_APP: require('../assets/icons/aboutApp.png'),
   MODAL_CLOSE_BUTTON: require('../assets/icons/close.png'),
 });

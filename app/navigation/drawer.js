@@ -1,5 +1,5 @@
-import {createAppContainer} from 'react-navigation';
-import {createDrawerNavigator} from 'react-navigation-drawer';
+import { createAppContainer } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import MainScreen from '../screens/main';
 import DrawerMenuItems from '../screens/drawerMenu';
 import EducationScreen from '../screens/education';
@@ -7,10 +7,11 @@ import SportScreen from '../screens/sport';
 import CultureScreen from '../screens/culture';
 import EconomyScreen from '../screens/economy';
 import GeographyScreen from '../screens/geography';
-import {HistoryStackNav} from './stacks/historyStackNav';
-import {ExecutiveStackNav} from './stacks/executiveStackNav';
+import { HistoryStackNav } from './stacks/historyStackNav';
+import { ExecutiveStackNav } from './stacks/executiveStackNav';
 import PhotosScreen from '../screens/photos';
-import {AboutStackNav} from './stacks/aboutStackNav';
+import { AboutStackNav } from './stacks/aboutStackNav';
+import NewsScreen from '../screens/news';
 
 const DrawerMenu = createDrawerNavigator(
   {
@@ -24,6 +25,7 @@ const DrawerMenu = createDrawerNavigator(
     Geography: GeographyScreen,
     Head: ExecutiveStackNav,
     About: AboutStackNav,
+    News: NewsScreen,
   },
   {
     initialRouteName: 'Main',

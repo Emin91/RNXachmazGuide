@@ -10,7 +10,7 @@ const ImageCardComponent = () => {
         <Text style={styles.headerTitle}>{titles.CARDS_TITLE_PHOTO}</Text>
       </View>
       <View style={styles.imageSliderView}>
-        <Text>sxsx</Text>
+        <Text>sdd</Text>
       </View>
     </View>
   );
