@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   newsTitleView: {
     flex: 0.15,
     paddingLeft: 10,
+
     justifyContent: 'center',
   },
   newsTitle: {

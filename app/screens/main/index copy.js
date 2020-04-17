@@ -1,14 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import {
-  View,
-  ScrollView,
-  StatusBar,
-  Text,
-  ActivityIndicator,
-} from 'react-native';
-import {cards} from './components/cardsArray';
-import {colors} from '../../constants/colors';
-import {titles} from '../../constants/strings';
+import React, { useState, useEffect } from 'react';
+import { View, ScrollView, StatusBar, Text, ActivityIndicator } from 'react-native';
+import { cards } from './components/cardsArray';
+import { colors } from '../../constants/colors';
+import { titles } from '../../constants/strings';
 import ItemsCardComponent from '../../components/Items';
 import TextCardComponent from '../../components/textCard';
 import HeaderComponent from '../../components/header';
@@ -26,7 +20,8 @@ const states = {
 
 const DOMAIN = 'http://www.xachmaz-ih.gov.az';
 
-const MainScreen = ({navigation}) => {
+
+const MainScreen = ({ navigation }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [news, setNews] = useState([]);
   const [status, setStatus] = useState(states.initial);
@@ -35,7 +30,7 @@ const MainScreen = ({navigation}) => {
     const fetchNews = async () => {
       setStatus(states.pending);
       try {
-        const searchUrl = `http://www.xachmaz-ih.gov.az/news.html`;
+        const searchUrl = `http://www.xachmaz-ih.gov.az/news.htmlff`;
         const response = await fetch(searchUrl);
         const htmlString = await response.text();
         const $ = cheerio.load(htmlString);
@@ -75,7 +70,7 @@ const MainScreen = ({navigation}) => {
 
   if (status === states.pending || status === states.initial) {
     return (
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
         <ActivityIndicator size="large" color="#0000ff" />
       </View>
     );
@@ -89,6 +84,7 @@ const MainScreen = ({navigation}) => {
     );
   }
 
+
   return (
     <View style={styles.mainView}>
       <ModalExit visible={modalVisible} setVisible={setModalVisible} />
@@ -96,30 +92,22 @@ const MainScreen = ({navigation}) => {
       <View style={styles.headerComponent}>
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
       </View>
-      <View style={{flex: 0.9}}>
+      <View style={{ flex: 0.9 }}>
         <ScrollView overScrollMode="never" style={styles.scrollView}>
+        { 
           <View style={styles.newsView}>
-            <View style={styles.newsTitleView}>
-              <Text style={styles.newsTitle}>{titles.CARDS_TITLE_NEWS}</Text>
-            </View>
-            <View style={{flex: 1, paddingBottom: 10}}>
-              {news
-                .slice(0, 6)
-                .map(({title, date, thumbnailURL, url, description}) => {
-                  return (
-                    <NewsCardComponent
-                      title={title}
-                      date={date}
-                      thumbnailURL={thumbnailURL}
-                      description={description}
-                      url={url}
-                      DOMAIN={DOMAIN}
-                    />
-                  );
-                })}
-            </View>
+          <View style={styles.newsTitleView}>
+            <Text style={styles.newsTitle}>{titles.CARDS_TITLE_NEWS}</Text>
           </View>
-          {cards.map(({headerTitle, textContent}) => {
+          {news.slice(0, 6).map(({ title, date, thumbnailURL, url, description }) => {
+            return (
+              <NewsCardComponent title={title} date={date} thumbnailURL={thumbnailURL} description={description} url={url} DOMAIN={DOMAIN} />
+            );
+          })}
+        </View>
+        }
+
+          {cards.map(({ headerTitle, textContent }) => {
             return (
               <View key={headerTitle}>
                 <TextCardComponent

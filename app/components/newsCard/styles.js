@@ -3,16 +3,16 @@ import { colors } from '../../constants/colors';
 import { myFonts } from '../../constants/fonts';
 
 const styles = StyleSheet.create({
-    imageSliderView: {
+    itemsView: {
         paddingHorizontal: 5,
     },
     newsItemRows: {
         flex: 1,
-        // height: 90,
         borderRadius: 5,
         paddingLeft: 5,
         paddingVertical: 5,
-        marginBottom: 10,
+        marginTop: 5,
+        marginBottom: 2,
         flexDirection: 'row',
         backgroundColor: colors.MAIN_CINDER,
     },
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     descriptionTitle: {
         fontSize: 10,
         marginTop: 5,
+        marginVertical: 5,
         color: colors.WHITE,
     },
     detailsView: {

@@ -1,30 +1,48 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, Linking } from 'react-native';
+import {View, Text, Image, TouchableOpacity, Linking} from 'react-native';
 import styles from './styles';
-import { titles } from '../../constants/strings';
+import {titles} from '../../constants/strings';
 
-const NewsCardComponent = ({ title, thumbnailURL, url, description, DOMAIN }) => {
-    return (
-        <View style={styles.imageSliderView}>
-            <TouchableOpacity activeOpacity={0.6} onPress={() => Linking.openURL(DOMAIN + url)} style={styles.newsItemRows}>
-                <View style={styles.imgView}>
-                    <Image style={styles.img} source={{ uri: DOMAIN + thumbnailURL }} />
-                </View>
-                <View style={styles.descriptionColumnsView}>
-                    <View style={styles.newsTitleView}>
-                        <Text style={styles.newsTitle} numberOfLines={2}>{title}</Text>
-                    </View>
-                    <View style={styles.descriptionView}>
-                        <Text style={styles.descriptionTitle} numberOfLines={3}>{description}</Text>
-                    </View>
-                    <View style={styles.detailsView}>
-                        <Text style={styles.date} numberOfLines={5}>2020-04-10</Text>
-                        <Text style={styles.date} numberOfLines={5}>{titles.CARDS_MORE}</Text>
-                    </View>
-                </View>
-            </TouchableOpacity>
+const NewsCardComponent = ({
+  title,
+  date,
+  thumbnailURL,
+  url,
+  description,
+  DOMAIN,
+}) => {
+  return (
+    <View style={styles.itemsView}>
+      <TouchableOpacity
+        activeOpacity={0.6}
+        onPress={() => Linking.openURL(DOMAIN + url)}
+        style={styles.newsItemRows}>
+        <View style={styles.imgView}>
+          <Image style={styles.img} source={{uri: DOMAIN + thumbnailURL}} />
         </View>
-    );
+        <View style={styles.descriptionColumnsView}>
+          <View style={styles.newsTitleView}>
+            <Text style={styles.newsTitle} numberOfLines={2}>
+              {title}
+            </Text>
+          </View>
+          <View style={styles.descriptionView}>
+            <Text style={styles.descriptionTitle} numberOfLines={3}>
+              {description}
+            </Text>
+          </View>
+          <View style={styles.detailsView}>
+            <Text style={styles.date} numberOfLines={5}>
+              {date}
+            </Text>
+            <Text style={styles.date} numberOfLines={5}>
+              {titles.CARDS_MORE}
+            </Text>
+          </View>
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
 };
 
 export default NewsCardComponent;
