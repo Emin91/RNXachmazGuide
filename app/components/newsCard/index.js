@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity, Linking} from 'react-native';
+import { View, Text, Image, TouchableOpacity, Linking } from 'react-native';
 import styles from './styles';
-import {titles} from '../../constants/strings';
+import { titles } from '../../constants/strings';
 
 const NewsCardComponent = ({
   title,
@@ -9,16 +9,16 @@ const NewsCardComponent = ({
   thumbnailURL,
   url,
   description,
-  DOMAIN,
+  domain,
 }) => {
   return (
     <View style={styles.itemsView}>
       <TouchableOpacity
         activeOpacity={0.6}
-        onPress={() => Linking.openURL(DOMAIN + url)}
+        onPress={() => Linking.openURL(domain + url)}
         style={styles.newsItemRows}>
         <View style={styles.imgView}>
-          <Image style={styles.img} source={{uri: DOMAIN + thumbnailURL}} />
+          <Image style={styles.img} source={{ uri: domain + thumbnailURL }} />
         </View>
         <View style={styles.descriptionColumnsView}>
           <View style={styles.newsTitleView}>

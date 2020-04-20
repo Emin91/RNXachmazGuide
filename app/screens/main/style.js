@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   newsView: {
     flex: 1,
-    borderRadius: 12,
+    borderRadius: 10,
     marginTop: 20,
     marginHorizontal: 8,
     backgroundColor: colors.SUB_CLAY,
@@ -25,11 +25,19 @@ const styles = StyleSheet.create({
   newsTitleView: {
     flex: 0.15,
     paddingLeft: 10,
-
     justifyContent: 'center',
   },
   newsTitle: {
     fontSize: 25,
+    fontFamily: myFonts.MONTSERRAT_BOLD,
+    color: colors.ORANGE,
+  },
+  newsContent: {
+    flex: 1,
+    paddingBottom: 10,
+  },
+  errorTitle: {
+    fontSize: 15,
     fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
