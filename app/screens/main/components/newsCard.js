@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import {
     View,
     Text,
-    ActivityIndicator,
 } from 'react-native';
 import { titles } from '../../../constants/strings';
-import styles from '../style';
 import NewsCardComponent from '../../../components/newsCard';
+import styles from '../style';
 import cheerio from 'react-native-cheerio';
-import { colors } from '../../../constants/colors';
+import ContentLoading from './contentLoading';
+import ContentNotLoaded from './contentNotLoaded';
 
 const states = {
     initial: 'INITIAL',
@@ -66,24 +66,11 @@ const NewsCard = () => {
     }, []);
 
     if (status === states.pending || status === states.initial) {
-        return (
-            <View style={styles.newsView}>
-                <View style={styles.newsTitleView}>
-                    <Text style={styles.newsTitle}>{titles.CARDS_TITLE_NEWS}</Text>
-                </View>
-                <View style={styles.newsContent}>
-                    <ActivityIndicator size="large" color={colors.ORANGE} />
-                </View>
-            </View>
-        );
+        return <ContentLoading />
     }
 
     if (status === states.error || !news.length) {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={styles.errorTitle}>Xəbərlər bölməsi yüklənilmədi</Text>
-            </View>
-        );
+        return <ContentNotLoaded />
     }
 
     return (
@@ -103,11 +90,10 @@ const NewsCard = () => {
                                     thumbnailURL={thumbnailURL}
                                     description={description}
                                     url={url}
-                                    domain={DOMAIN}
-                                />
-                            );
-                        })
-                }
+                                    domain={DOMAIN} />
+                            )
+                        }
+                        )}
             </View>
         </View>
     )

@@ -25,7 +25,7 @@ const MainScreen = ({ navigation }) => {
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
       </View>
       <View style={{ flex: 0.9 }}>
-        <ScrollView overScrollMode="never" style={styles.scrollView}>
+        <ScrollView overScrollMode="never" showsVerticalScrollIndicator={false} style={styles.scrollView}>
           <NewsCard />
           {cards.map(({ headerTitle, textContent }) => {
             return (

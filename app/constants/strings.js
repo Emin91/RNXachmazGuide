@@ -16,6 +16,7 @@ export const titles = {
   MENU_ABOUT_APP: 'App haqqında',
   MENU_EXIT: 'Çıxış',
   PAGE_IS_ACTIVE: 'Səhifə aktivdir',
+  CONTENT_NOT_LOADED: 'Xəbərlər bölməsi yüklənilmədi',
   //History
   HISTORY_MAP_TITLE: 'Xaçmaz şəhərinin xəritəsi',
   HISTORY_MUZEUM: 'Tarix muzeyi',
