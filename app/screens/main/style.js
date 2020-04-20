@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   newsView: {
     flex: 1,
     borderRadius: 10,
-    marginTop: 20,
+    marginTop: 10,
     marginHorizontal: 8,
     backgroundColor: colors.SUB_CLAY,
   },

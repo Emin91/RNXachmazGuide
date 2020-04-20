@@ -80,7 +80,7 @@ const NewsCard = () => {
             </View>
             <View style={styles.newsContent}>
                 {
-                    news.slice(0, 6)
+                    news.slice(0, 9)
                         .map(({ title, date, thumbnailURL, url, description }) => {
                             return (
                                 <NewsCardComponent
