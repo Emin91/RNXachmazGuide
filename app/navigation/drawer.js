@@ -11,7 +11,7 @@ import { HistoryStackNav } from './stacks/historyStackNav';
 import { ExecutiveStackNav } from './stacks/executiveStackNav';
 import PhotosScreen from '../screens/photos';
 import { AboutStackNav } from './stacks/aboutStackNav';
-import NewsScreen from '../screens/news';
+// import NewsScreen from '../screens/ne';
 
 const DrawerMenu = createDrawerNavigator(
   {
@@ -25,7 +25,7 @@ const DrawerMenu = createDrawerNavigator(
     Geography: GeographyScreen,
     Head: ExecutiveStackNav,
     About: AboutStackNav,
-    News: NewsScreen,
+    // News: NewsScreen,
   },
   {
     initialRouteName: 'Main',
