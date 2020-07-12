@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
-import { colors } from '../../constants/colors';
 
 const DetailsCardComponent = ({headerTitle, infoData}) => {
   return (
@@ -11,7 +10,7 @@ const DetailsCardComponent = ({headerTitle, infoData}) => {
       </View>
       <View style={styles.chartView}>
           {infoData.map((item, i)=>{
-             return <Text key={i} style={[styles.descriptionTitle, {color: i % 2 ? colors.ORANGE : colors.WHITE}]}>{item}</Text>
+             return <Text key={i} style={styles.descriptionTitle}>{item}</Text>
           })}
       </View>
     </View>

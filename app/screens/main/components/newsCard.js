@@ -6,6 +6,8 @@ import styles from '../style';
 import cheerio from 'react-native-cheerio';
 import ContentLoading from './contentLoading';
 import ContentNotLoaded from './contentNotLoaded';
+import RandomNewCard from '../../../components/randomNewCard';
+import { useSelector } from 'react-redux';
 
 const states = {
   initial: 'INITIAL',
@@ -19,6 +21,8 @@ const DOMAIN = 'http://www.xachmaz-ih.gov.az';
 const NewsCard = () => {
   const [news, setNews] = useState([]);
   const [status, setStatus] = useState(states.initial);
+
+  const {counter, isNewsWithImage} = useSelector(state => state.newsReducer)
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -76,22 +80,30 @@ const NewsCard = () => {
         <Text style={styles.newsTitle}>{titles.CARDS_TITLE_NEWS}</Text>
       </View>
       <View style={styles.newsContent}>
-        {news
-          .slice(0, 9)
-          .map((item, index) => {
-            return (
-              <NewsCardComponent
-                key={item.title}
-                title={item.title}
-                date={item.date}
-                thumbnailURL={item.thumbnailURL}
-                description={item.description}
-                url={item.url}
-                index={index}
-                domain={DOMAIN}
-              />
-            );
-          })}
+        {news.slice(0, counter).map((item, index) => {
+              return isNewsWithImage ?
+                <NewsCardComponent
+                  key={item.title}
+                  title={item.title}
+                  date={item.date}
+                  thumbnailURL={item.thumbnailURL}
+                  description={item.description}
+                  url={item.url}
+                  index={index}
+                  domain={DOMAIN}
+                />
+               : 
+                <RandomNewCard
+                  key={item.title}
+                  title={item.title}
+                  date={item.date}
+                  thumbnailURL={item.thumbnailURL}
+                  description={item.description}
+                  url={item.url}
+                  index={index}
+                  domain={DOMAIN}
+                />
+            })}
       </View>
     </View>
   );
