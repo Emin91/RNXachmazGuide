@@ -2,13 +2,15 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity, Linking } from 'react-native';
 import styles from './styles';
 import { titles } from '../../constants/strings';
+import { colors } from '../../constants/colors';
 
 const NewsCardComponent = ({
   title,
+  description,
   date,
   thumbnailURL,
   url,
-  description,
+  index,
   domain,
 }) => {
   return (
@@ -22,13 +24,8 @@ const NewsCardComponent = ({
         </View>
         <View style={styles.descriptionColumnsView}>
           <View style={styles.newsTitleView}>
-            <Text style={styles.newsTitle} numberOfLines={2}>
-              {title}
-            </Text>
-          </View>
-          <View style={styles.descriptionView}>
-            <Text style={styles.descriptionTitle} numberOfLines={3}>
-              {description}
+            <Text style={styles.newsTitle} numberOfLines={5}>
+              {title || description}
             </Text>
           </View>
           <View style={styles.detailsView}>

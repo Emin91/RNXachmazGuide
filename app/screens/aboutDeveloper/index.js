@@ -11,14 +11,11 @@ const AboutAuthorScreen = () => {
   return (
     <View style={styles.mainView}>
       <View style={styles.detailsViewOne}>
-        <View style={styles.headerView}>
-          <Text style={styles.headerTitle}>{titles.DEV_PROFILE}</Text>
-        </View>
         <View style={styles.imgView}>
-          <Image source={images.avatar} style={styles.img} />
+          <Image source={images.AVATAR} style={styles.img} />
         </View>
         <View style={styles.authorView}>
-          <Text style={styles.authorName}>{titles.DEV_AUTHOR}</Text>
+          <Text style={styles.authorName}>{titles.DEV_PROFILE}</Text>
         </View>
         <SocialButtons />
       </View>

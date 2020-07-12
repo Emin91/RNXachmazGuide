@@ -13,7 +13,7 @@ export const schoolList = [
   },
   {
     num: 2,
-    schoolName: 'Ç.Abdullayev adına Xaçmaz şəhər 2 №-li tam orta məktəb',
+    schoolName: 'Ç.Abdullayev adına Xaçmaz şəhər \n \t \t \t \t 2 №-li tam orta məktəb',
     director: 'Sədullayeva Sevinc Nəriman qızı',
     location: 'Xaçmaz şəhəri Bakı küçəsi 1',
     created: 1967,
@@ -24,7 +24,7 @@ export const schoolList = [
   },
   {
     num: 3,
-    schoolName: 'İ.Qayibov adına Xaçmaz şəhər 3 №-li tam orta məktəb',
+    schoolName: 'İ.Qayibov adına Xaçmaz şəhər \n \t \t \t \t 3 №-li tam orta məktəb',
     director: 'Zahiov İslam Bayram oğlu',
     location: 'Xaçmaz şəhəri H.Əliyev prospekti 34',
     created: 1936,

@@ -14,12 +14,6 @@ const styles = StyleSheet.create({
   detailsViewOne: {
     flex: 0.5,
   },
-  headerView: {
-    flex: 0.1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingTop: 30,
-  },
   headerTitle: {
     fontSize: 20,
     color: colors.ORANGE,

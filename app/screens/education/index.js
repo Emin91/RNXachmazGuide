@@ -28,7 +28,7 @@ const EducationScreen = ({navigation}) => {
           </Text>
         </View>
         <ScrollView overScrollMode="never" style={styles.scrollView}>
-          {schoolList.map(
+          {/* {schoolList.map(
             ({
               num,
               schoolName,
@@ -51,7 +51,7 @@ const EducationScreen = ({navigation}) => {
                   description={description}></SchoolCards>
               );
             },
-          )}
+          )} */}
         </ScrollView>
       </View>
     </View>

@@ -10,16 +10,8 @@ const data = [
   {dimensions: {width: 200, height: 150}, num: '3', source: images.IMG_3},
   {dimensions: {width: 200, height: 320}, num: '4', source: images.IMG_MAP},
   {dimensions: {width: 200, height: 220}, num: '5', source: images.IMG_HISTORY},
-  {
-    dimensions: {width: 200, height: 350},
-    num: '6',
-    source: images.IMG_OLIMP_ONE,
-  },
-  {
-    dimensions: {width: 200, height: 350},
-    num: '7',
-    source: images.IMG_OLIMP_TWO,
-  },
+  {dimensions: {width: 200, height: 350}, num: '6', source: images.IMG_OLIMP_ONE,},
+  {dimensions: {width: 200, height: 350}, num: '7', source: images.IMG_OLIMP_TWO,},
 ];
 
 const ImageGridTets = () => {

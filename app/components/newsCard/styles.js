@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     newsTitle: {
         fontSize: 11,
         fontFamily: myFonts.LATINO,
-        color: colors.ORANGE,
+        color: colors.WHITE,
     },
     descriptionView: {
         flex: 1,
