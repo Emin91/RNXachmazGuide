@@ -18,7 +18,9 @@ export const titles = {
   PAGE_IS_ACTIVE: 'Səhifə aktivdir',
   CONTENT_NOT_LOADED: 'Xəbərlər bölməsi yüklənilmədi',
   SETTINGS_NEWS_PRESENTATION: 'Xəbərlərin görünüşü',
+  SETTINGS_NEWS_COUNT: 'Xəbərlərin sayı',
   SETTINGS_NEWS_WITH_IMAGE: 'Şəkilli',
+  SETTINGS_NEWS_PREVIEW_TEXT: 'Nümunə',
   SETTINGS_NEWS_SIMPLE: 'Sadə',
   //History
   HISTORY_MAP_TITLE: 'Xaçmaz şəhərinin xəritəsi',

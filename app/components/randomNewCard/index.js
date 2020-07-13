@@ -11,7 +11,7 @@ const RandomNewCard = ({
   domain,
 }) => {
   return (
-    <TouchableOpacity style={styles.mainView} onPress={() => Linking.openURL(domain + url)}>
+    <TouchableOpacity style={styles.mainView} disabled>
         <Text style={styles.description} numberOfLines={3}>
             {title || description}
         </Text>

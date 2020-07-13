@@ -16,8 +16,7 @@ const NewsCardComponent = ({
   return (
     <View style={styles.itemsView}>
       <TouchableOpacity
-        activeOpacity={0.6}
-        onPress={() => Linking.openURL(domain + url)}
+        disabled
         style={styles.newsItemRows}>
         <View style={styles.imgView}>
           <Image style={styles.img} source={{ uri: domain + thumbnailURL }} />

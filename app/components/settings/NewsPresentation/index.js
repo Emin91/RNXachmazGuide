@@ -11,6 +11,7 @@ import {
   decreaseNewsCountActions,
 } from '../../../screens/settingScreen/redux/actions';
 import InputSpinner from 'react-native-input-spinner';
+import NewsCardPreview from '../../../screens/main/components/newsCardPreview';
 
 const NewsPresentation = () => {
   const options = [
@@ -38,7 +39,7 @@ const NewsPresentation = () => {
         />
       </View>
       <View style={styles.container}>
-        <Text style={styles.title}>{titles.SETTINGS_NEWS_PRESENTATION}</Text>
+        <Text style={styles.title}>{titles.SETTINGS_NEWS_COUNT}</Text>
         <InputSpinner
           min={3}
           max={12}
@@ -54,6 +55,10 @@ const NewsPresentation = () => {
           onIncrease={increased => dispatch(increaseNewsCountActions(increased))}
           onDecrease={decreased => dispatch(decreaseNewsCountActions(decreased))}
         />
+      </View>
+      <View style={styles.containerPreview}>
+        <Text style={styles.titlePreview}>{titles.SETTINGS_NEWS_PREVIEW_TEXT}</Text>
+        <NewsCardPreview />
       </View>
     </View>
   );

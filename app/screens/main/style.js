@@ -22,6 +22,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     backgroundColor: colors.SUB_CLAY,
   },
+  newsViewPreview: {
+    flex: 1,
+    borderRadius: 10,
+    marginTop: 10,
+    backgroundColor: colors.SUB_CLAY,
+  },
   newsTitleView: {
     flex: 0.15,
     paddingLeft: 10,

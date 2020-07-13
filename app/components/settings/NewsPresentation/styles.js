@@ -17,6 +17,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  containerPreview: {
+    flex: 1,
+  },
   headerComponent: {
     flex: 0.1,
   },
@@ -29,6 +32,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     paddingBottom: 5,
     paddingHorizontal: 12,
+    fontFamily: myFonts.MONTSERRAT,
+    color: colors.WHITE,
+  },
+  titlePreview: {
+    fontSize: 15,
+    marginTop: 10,
+    alignSelf: 'center',
     fontFamily: myFonts.MONTSERRAT,
     color: colors.WHITE,
   },
