@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   ScrollView,
   StatusBar,
 } from 'react-native';
-import { cards } from './components/cardsArray';
 import { colors } from '../../constants/colors';
 import { titles } from '../../constants/strings';
 import ItemsCardComponent from '../../components/Items';
-import TextCardComponent from '../../components/textCard';
 import HeaderComponent from '../../components/header';
-import ModalExit from './components/modalExit';
 import NewsCard from './components/newsCard';
 import styles from './style';
 import DetailsCardComponent from '../../components/detailsCard';
 
 const MainScreen = ({ navigation }) => {
-  const [modalVisible, setModalVisible] = useState(false);
 
   const infoData = [
     'Daxildir:  Quba-Xaçmaz iqtisadi rayonu',
@@ -32,7 +28,6 @@ const MainScreen = ({ navigation }) => {
 
   return (
     <View style={styles.mainView}>
-      <ModalExit visible={modalVisible} setVisible={setModalVisible} />
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent title={titles.MAIN_TITLE} navigation={navigation} />
