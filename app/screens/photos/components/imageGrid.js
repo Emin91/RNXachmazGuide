@@ -38,7 +38,7 @@ const ImageGrid = () => {
             }}>
             <Text
               style={{color: colors.SUB_CLAY, fontFamily: myFonts.ARCH_BOLD}}>
-              Size {height}
+              Photo {title}
             </Text>
           </View>
         )}

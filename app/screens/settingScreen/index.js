@@ -13,8 +13,8 @@ const SettingsScreen = ({navigation}) => {
       <StatusBar backgroundColor={colors.SUB_CLAY} />
       <View style={styles.headerComponent}>
         <HeaderComponent
-          iconName={icons.MENU_CULTURE}
-          title={titles.MENU_CULTURE}
+          iconName={icons.MENU_SETTINGS}
+          title={titles.MENU_SETTINGS}
           navigation={navigation}
         />
       </View>

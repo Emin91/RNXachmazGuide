@@ -38,6 +38,12 @@ const styles = StyleSheet.create({
     fontFamily: myFonts.MONTSERRAT_BOLD,
     color: colors.ORANGE,
   },
+  loading: {
+    fontSize: 16, 
+    color: colors.ORANGE, 
+    alignSelf: 'center', 
+    marginTop: 10,
+  },
   newsContent: {
     flex: 1,
     paddingBottom: 10,
@@ -81,6 +87,13 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontFamily: myFonts.BALOO,
     color: colors.ORANGE,
+  },
+  titlePreview: {
+    fontSize: 15,
+    marginTop: 10,
+    alignSelf: 'center',
+    fontFamily: myFonts.MONTSERRAT,
+    color: colors.WHITE,
   },
   buttonsView: {
     flex: 1,

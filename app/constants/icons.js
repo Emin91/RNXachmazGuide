@@ -17,6 +17,7 @@ export default (icons = {
   MENU_INFO: require('../assets/icons/info.png'),
   MENU_EXIT: require('../assets/icons/exit.png'),
   MENU_NEWS: require('../assets/icons/news.png'),
+  MENU_SETTINGS: require('../assets/icons/settings.png'),
   ICON_FB: require('../assets/icons/fb.png'),
   ICON_BE: require('../assets/icons/be.png'),
   ICON_INST: require('../assets/icons/inst.png'),

@@ -35,13 +35,6 @@ const styles = StyleSheet.create({
     fontFamily: myFonts.MONTSERRAT,
     color: colors.WHITE,
   },
-  titlePreview: {
-    fontSize: 15,
-    marginTop: 10,
-    alignSelf: 'center',
-    fontFamily: myFonts.MONTSERRAT,
-    color: colors.WHITE,
-  },
 });
 
 export default styles;

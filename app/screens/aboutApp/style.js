@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   version: {
     fontSize: 12,
     fontFamily: myFonts.MONTSERRAT,
-    color: '#858585',
+    color: colors.LIGHT_GRAY,
   },
 });
 

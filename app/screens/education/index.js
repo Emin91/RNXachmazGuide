@@ -6,8 +6,6 @@ import styles from './style';
 import {titles} from '../../constants/strings';
 import icons from '../../constants/icons';
 import {bigText} from '../../constants/moreText';
-import SchoolCards from './components/schoolCards';
-import {schoolList} from './components/schoolListArray';
 
 const EducationScreen = ({navigation}) => {
   return (
@@ -21,37 +19,12 @@ const EducationScreen = ({navigation}) => {
         />
       </View>
       <View style={{flex: 0.9}}>
-        <View>
+        <ScrollView overScrollMode="never" style={styles.scrollView}>
           <Text style={styles.descriptionText}>{bigText.EDUCATION_TITLE}</Text>
           <Text style={styles.descriptionListTitle}>
-            {titles.CARD_ITEM_NAME}
+            {titles.CARD_ITEM_NAME_EDU_HEAD}
           </Text>
-        </View>
-        <ScrollView overScrollMode="never" style={styles.scrollView}>
-          {/* {schoolList.map(
-            ({
-              num,
-              schoolName,
-              director,
-              location,
-              created,
-              studentCount,
-              teacherCount,
-              description,
-            }) => {
-              return (
-                <SchoolCards
-                  key={num}
-                  schoolName={schoolName}
-                  director={director}
-                  location={location}
-                  created={created}
-                  studentCount={studentCount}
-                  teacherCount={teacherCount}
-                  description={description}></SchoolCards>
-              );
-            },
-          )} */}
+          <Text style={styles.descriptionText}>{bigText.ABOUT_EDU_HEAD}</Text>
         </ScrollView>
       </View>
     </View>

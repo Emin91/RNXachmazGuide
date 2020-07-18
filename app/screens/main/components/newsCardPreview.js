@@ -1,28 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text} from 'react-native';
-import {titles} from '../../../constants/strings';
 import NewsCardComponent from '../../../components/newsCard';
 import styles from '../style';
 import cheerio from 'react-native-cheerio';
-import ContentLoading from './contentLoading';
-import ContentNotLoaded from './contentNotLoaded';
 import RandomNewCard from '../../../components/randomNewCard';
-import { useSelector } from 'react-redux';
-
-const states = {
-  initial: 'INITIAL',
-  pending: 'PENDING',
-  completed: 'COMPLETED',
-  error: 'ERROR',
-};
+import {useSelector} from 'react-redux';
+import {titles} from '../../../constants/strings';
 
 const DOMAIN = 'http://www.xachmaz-ih.gov.az';
 
 const NewsCardPreview = () => {
+  const {states, isNewsWithImage} = useSelector(state => state.newsReducer);
   const [news, setNews] = useState([]);
   const [status, setStatus] = useState(states.initial);
-
-  const {counter, isNewsWithImage} = useSelector(state => state.newsReducer)
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -66,33 +56,46 @@ const NewsCardPreview = () => {
     fetchNews();
   }, []);
 
+  if (status === states.pending || status === states.initial) {
+    return <Text style={styles.loading}>{titles.SETTINGS_NEWS_PREVIEW_TEXT_LOAD}</Text>;
+  }
 
   return (
     <View style={styles.newsViewPreview}>
+      {status === states.error || !news.length ? (
+        <Text style={styles.titlePreview}>
+          {titles.SETTINGS_NEWS_PREVIEW_TEXT_ERR}
+        </Text>
+      ) : (
+        <Text style={styles.titlePreview}>
+          {titles.SETTINGS_NEWS_PREVIEW_TEXT}
+        </Text>
+      )}
       {news.slice(0, 1).map((item, index) => {
-              return isNewsWithImage ?
-                <NewsCardComponent
-                  key={item.title}
-                  title={item.title}
-                  date={item.date}
-                  thumbnailURL={item.thumbnailURL}
-                  description={item.description}
-                  url={item.url}
-                  index={index}
-                  domain={DOMAIN}
-                />
-               : 
-                <RandomNewCard
-                  key={item.title}
-                  title={item.title}
-                  date={item.date}
-                  thumbnailURL={item.thumbnailURL}
-                  description={item.description}
-                  url={item.url}
-                  index={index}
-                  domain={DOMAIN}
-                />
-            })}
+        return isNewsWithImage ? (
+          <NewsCardComponent
+            key={item.title}
+            title={item.title}
+            date={item.date}
+            thumbnailURL={item.thumbnailURL}
+            description={item.description}
+            url={item.url}
+            index={index}
+            domain={DOMAIN}
+          />
+        ) : (
+          <RandomNewCard
+            key={item.title}
+            title={item.title}
+            date={item.date}
+            thumbnailURL={item.thumbnailURL}
+            description={item.description}
+            url={item.url}
+            index={index}
+            domain={DOMAIN}
+          />
+        );
+      })}
     </View>
   );
 };

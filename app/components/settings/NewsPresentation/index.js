@@ -20,7 +20,7 @@ const NewsPresentation = () => {
   ];
 
   const dispatch = useDispatch();
-  const {counter} = useSelector(state => state.newsReducer);
+  const {counter, news} = useSelector(state => state.newsReducer);
 
   return (
     <View style={styles.mainView}>
@@ -57,7 +57,6 @@ const NewsPresentation = () => {
         />
       </View>
       <View style={styles.containerPreview}>
-        <Text style={styles.titlePreview}>{titles.SETTINGS_NEWS_PREVIEW_TEXT}</Text>
         <NewsCardPreview />
       </View>
     </View>

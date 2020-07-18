@@ -1,8 +1,15 @@
 import { SHOW_SIMPLE_NEWS_CARD, INCREASE_NEWS_COUNT, DECREASE_NEWS_COUNT } from "../../constants";
 
 const initialState = {
-  counter: 3,
+  counter: 9,
   isNewsWithImage: true,
+  news: [],
+  states: {
+    initial: 'INITIAL',
+    pending: 'PENDING',
+    completed: 'COMPLETED',
+    error: 'ERROR',
+  }
 };
 
 const newsReducer = (state = initialState, action) => {

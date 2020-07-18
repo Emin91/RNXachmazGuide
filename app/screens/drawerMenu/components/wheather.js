@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import {iconsObj} from '../../../constants/iconsObject';
 import styles from '../style';
 
 const newIcon = {
@@ -27,11 +26,6 @@ const Wheather = ({time, data, dataWh}) => {
           {Math.round(data.main.temp)}
           {`\xB0`}C
         </Text>
-        <Image
-          resizeMode="center"
-          style={styles.whIcon}
-          source={iconsObj[dataWh[0].icon] || iconsObj['01d']}
-        />
       </View>
       <View style={styles.infoView}>
         <SmallIcon iconName={'wind'} />

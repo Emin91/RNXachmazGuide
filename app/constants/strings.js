@@ -14,6 +14,7 @@ export const titles = {
   MENU_GEO: 'Coğrafi mövqeyi',
   MENU_EXECUTIVE: 'İcra Hakimiyyəti',
   MENU_ABOUT_APP: 'App haqqında',
+  MENU_SETTINGS: 'Ayarlar',
   MENU_EXIT: 'Çıxış',
   PAGE_IS_ACTIVE: 'Səhifə aktivdir',
   CONTENT_NOT_LOADED: 'Xəbərlər bölməsi yüklənilmədi',
@@ -21,6 +22,8 @@ export const titles = {
   SETTINGS_NEWS_COUNT: 'Xəbərlərin sayı',
   SETTINGS_NEWS_WITH_IMAGE: 'Şəkilli',
   SETTINGS_NEWS_PREVIEW_TEXT: 'Nümunə',
+  SETTINGS_NEWS_PREVIEW_TEXT_ERR: 'Nümunə yüklənilmədi',
+  SETTINGS_NEWS_PREVIEW_TEXT_LOAD: 'Yüklənilir...',
   SETTINGS_NEWS_SIMPLE: 'Sadə',
   //History
   HISTORY_MAP_TITLE: 'Xaçmaz şəhərinin xəritəsi',
@@ -79,6 +82,7 @@ export const titles = {
   CARD_ITEM_NAME_STUDENT_COUNT: 'Şagirdlərin sayı:',
   CARD_ITEM_NAME_TEACHER_COUNT: 'Müəllimlərin sayı:',
   CARD_ITEM_NAME_INFO: 'Məlumat:',
+  CARD_ITEM_NAME_EDU_HEAD: 'Təhsil şöbəsinin müdiri',
   //Culture
   CULTURE_TITLE_ONE: 'Mədəniyyət, təhsil və səhiyyə müəssisələri',
   CULTURE_TITLE_TWO: 'Hal-hazırda Xaçmaz rayonunda',
